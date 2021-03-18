@@ -83,7 +83,9 @@ async function setVideo(video) {
         //console.log(curTranscript, video, select.value);
         renderText();
         statsarray = generateStats(texthaufen).sort(COMPARE_FUNKTIONS.sortAmountDown);
-        document.getElementById("spacefuerStats").appendChild(generateStatsTable(statsarray));
+        StatsSpace = document.getElementById("spacefuerStats");
+        StatsSpace.innerHTML = "";
+        StatsSpace.appendChild(generateStatsTable(statsarray));
     };
     document.getElementById("platzfuerselect").appendChild(nextButton);
 }
@@ -299,4 +301,3 @@ return table;
 //=================================
 
 }
-
