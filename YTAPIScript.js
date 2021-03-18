@@ -42,7 +42,11 @@ async function changeYTVideo(YTPlayer, newVideo) {
 };
 
 async function jumpInVideo(YTPlayer, position) {
-    YTPlayer.seekTo(position, false);
+    YTPlayer.seekTo(position, true);
+}
+
+function currentPosition(YTPlayer) {
+    return YTPlayer.getCurrentTime();
 }
 
 

@@ -8,12 +8,38 @@
         <script src="YTAPIScript.js"></script> <!--script which handles the yt api-->
     </head>
     <body>
-        <div id = "MyPlayer"></div>
-        <br>
-        <input type="text" id = "myTextfield">
-        <input type="button" value="Click Me!" onclick=" setVideo(document.getElementById('myTextfield').value)">
-        <span id="platzfuerselect"></span>
-        <p id="PlatzhalterfuerTextBox"></p>
+        <table style="width:100%">
+            <tr>
+                <!-- <th>Linker Teil</th>
+                <th>Reechter Teil</th> -->
+            </tr>
+            <tr>
+                <td><div id = "MyPlayer"></div></td>
+                <td>
+                    <div style="height:600px; overflow:auto;">
+                        <p id="PlatzhalterfuerTextBox"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id = "myTextfield">
+                    <input type="button" value="Click Me!" onclick=" setVideo(document.getElementById('myTextfield').value)">
+                    <span id="platzfuerselect"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="spacefuerStats"></div>
+                </td>
+
+            </tr>
+
+        </table>
+        
+
+        
+       
 
 
         
