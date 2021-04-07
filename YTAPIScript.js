@@ -48,8 +48,3 @@ async function jumpInVideo(YTPlayer, position) {
 function currentPosition(YTPlayer) {
     return YTPlayer.getCurrentTime();
 }
-
-
-
-
-

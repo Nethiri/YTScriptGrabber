@@ -1,12 +1,13 @@
 onload = function() {
     startProg(); 
 }
-const STATREPLACECHARACTERS = /[,.;?!/"“”„/\\/\n-0123456789–¿…]/g
+const STATREPLACECHARACTERS = /[%,.;?!/"“”„/\\/\n-0123456789–¿…]/g
 let player = undefined;
 let curTranscript = undefined;
 let transcriptSpans = undefined;
 let texthaufen = undefined;
 let statsarray = undefined;
+let highliteWord = undefined;
 const COMPARE_FUNKTIONS = {}
 COMPARE_FUNKTIONS.sortAmountUp = function(a,b) {
     return a.amount - b.amount;
@@ -76,16 +77,10 @@ async function setVideo(video) {
     nextButton.type = "BUTTON";
     nextButton.value="OK";
     nextButton.onclick = async function() {
-        //console.log(await loadTranscript(video, select.value));
-        //console.log(getText(curTranscript));
         curTranscript = getText(await loadTranscript(video, select.value));
         texthaufen = transcripttotext();
-        //console.log(curTranscript, video, select.value);
         renderText();
-        statsarray = generateStats(texthaufen).sort(COMPARE_FUNKTIONS.sortAmountDown);
-        StatsSpace = document.getElementById("spacefuerStats");
-        StatsSpace.innerHTML = "";
-        StatsSpace.appendChild(generateStatsTable(statsarray));
+        sortTableFunctions();
     };
     document.getElementById("platzfuerselect").appendChild(nextButton);
 }
@@ -184,6 +179,8 @@ function renderText() {
                 tbOPEN = false;
                 entr.textsnipit = tbtemp.value;
                 span.innerHTML = entr.textsnipit + " ";
+                texthaufen = transcripttotext();
+                sortTableFunctions();
             })
             
         });
@@ -204,6 +201,22 @@ function highlightText(currentpos) {
         }
         else{
             transcriptSpans[i].style = "background-color:none";
+        }
+    }
+}
+
+function hightlightWord(suchword) {
+    for(let i = 0; i < curTranscript.length; i++) {
+        let textToCheck = curTranscript[i].textsnipit;
+        let res = textToCheck.split(" ");
+        transcriptSpans[i].innerHTML = "";
+        for(let word of res) {
+            let wordSpan = document.createElement("SPAN");
+            wordSpan.innerHTML = word + " ";
+            if(word.toLowerCase() === suchword){
+                wordSpan.style = "background-color:#33d7ff";
+            }
+            transcriptSpans[i].appendChild(wordSpan);
         }
 
     }
@@ -276,6 +289,13 @@ for(let entry of array) { // eintraege in die Tab. generieren...
     block.appendChild(blockItem);
     //console.log(amount, word);
     displayArray.push(block);
+
+    block.onclick = function() {
+        //console.log(entry.word);
+        highliteWord = entry.word;
+        hightlightWord(entry.word);
+    }
+
 }
 //console.log(displayArray);
 let table = document.createElement("table");
@@ -300,4 +320,54 @@ return table;
 //= text0 = text1 = text2 = text3 =
 //=================================
 
+}
+
+function sortTableFunctions() {
+    let selectSort = document.createElement("SELECT");
+    let option1 = document.createElement("OPTION");
+    option1.value = "sortAmountDown"; 
+    option1.appendChild(document.createTextNode("Amount Down"));
+    selectSort.appendChild(option1);
+
+    let option2 = document.createElement("OPTION");
+    option2.value = "sortAmountUp"; 
+    option2.appendChild(document.createTextNode("Amount Up"));
+    selectSort.appendChild(option2);
+    
+
+    let option4 = document.createElement("OPTION");
+    option4.value = "sortLengthDown"; 
+    option4.appendChild(document.createTextNode("Leangh Down"));
+    selectSort.appendChild(option4);
+
+    let option3 = document.createElement("OPTION");
+    option3.value = "sortLengthUp"; 
+    option3.appendChild(document.createTextNode("Leangh Up"));
+    selectSort.appendChild(option3);
+
+    let option5 = document.createElement("OPTION");
+    option5.value = "alphabetAtoZ"; 
+    option5.appendChild(document.createTextNode("A to Z"));
+    selectSort.appendChild(option5);
+
+    let option6 = document.createElement("OPTION");
+    option6.value = "alphabetZtoA"; 
+    option6.appendChild(document.createTextNode("Z to A"));
+    selectSort.appendChild(option6);
+
+
+    statsarray = generateStats(texthaufen).sort(COMPARE_FUNKTIONS.sortAmountDown);
+    StatsSpace = document.getElementById("spacefuerStats");
+    StatsSpace.innerHTML = "";
+    StatsSpace.appendChild(generateStatsTable(statsarray));
+
+    selectSort.onchange = function() {
+        statsarray = generateStats(texthaufen).sort(COMPARE_FUNKTIONS[selectSort.value]);
+        StatsSpace = document.getElementById("spacefuerStats");
+        StatsSpace.innerHTML = "";
+        StatsSpace.appendChild(generateStatsTable(statsarray));
+    }
+
+    document.getElementById("placefuerselectzwo").innerHTML ="";
+    document.getElementById("placefuerselectzwo").appendChild(selectSort);
 }
