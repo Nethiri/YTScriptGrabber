@@ -44,6 +44,10 @@ async function setVideo(video) {
         return;
     }
     else{
+        //if the data is a youtube link take the id from it(last 11 characters)
+		if (video.startsWith("https://www.youtube.")){
+			video = video.substring(video.length - 11, video.length);
+		}
         if(player === undefined) {
             player = await createYTPlayer("MyPlayer", WIDTH,HIGHT, video);
             //console.log(await getLanguageList(video));
