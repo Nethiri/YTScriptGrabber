@@ -1,0 +1,2 @@
+Client Id - Public - dont care
+client secret - keep that thing private! DONT PUT ON HTML PAGE OR JS!!!
