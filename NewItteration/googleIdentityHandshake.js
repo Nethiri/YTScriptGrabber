@@ -90,4 +90,6 @@ function trydathing() {
   xhr.onreadystatechange = function (e) {
   console.log(xhr.response);
   }
+  xhr.addEventListener("error", console.log)
+  xhr.send(null);
 }
