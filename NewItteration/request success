@@ -1,0 +1,769 @@
+https://developers.google.com/youtube/v3/guides/implementation/captions
+
+
+{
+  "kind": "youtube#captionListResponse",
+  "etag": "GLK9Lxxiw04Gn4zBf1vExB-QWxM",
+  "items": [
+    {
+      "kind": "youtube#caption",
+      "etag": "gwjMIfDj3hVYd4JrEAg_oYFfmN8",
+      "id": "87p0w5zHo4uYl2v_9YX8kX-YUfGHZuI4",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-14T17:31:50.884874Z",
+        "trackKind": "standard",
+        "language": "ar",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ",
+      "id": "XLGQNLkQ6OxxvyAI4dEcBYefepVMYZhghfLiyJqY8_4=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2021-09-06T17:52:01.878471Z",
+        "trackKind": "asr",
+        "language": "en",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "mGspKvAqMdnjLkdY9YfwSPkuWdI",
+      "id": "87p0w5zHo4vkSnSedilVHZgBXcMatjZW",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:49.977957Z",
+        "trackKind": "standard",
+        "language": "bg",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "yIiblX3ZVLmS88tUuSquX5vOh5I",
+      "id": "87p0w5zHo4te9JixCISqNvsxwCeXCKfK",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T19:46:48.24129Z",
+        "trackKind": "standard",
+        "language": "cs",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "QZN9-mayFiGjn935q0YYua5Claw",
+      "id": "87p0w5zHo4snJH7XFL9IpZDxT6_5Q9fN",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-14T23:29:33.577827Z",
+        "trackKind": "standard",
+        "language": "de",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "bBhve7IlqyiawUce3FV-QhFwNPE",
+      "id": "87p0w5zHo4uXvG2lNLB5abk-kAOZ78El",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-28T11:17:10.177604Z",
+        "trackKind": "standard",
+        "language": "el",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "nI19OsU1Jjxy7_ImSzRVlPyOWjg",
+      "id": "87p0w5zHo4t3min6eSxZLiKZ1-V9vhPZ",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-14T20:47:21.350985Z",
+        "trackKind": "standard",
+        "language": "en",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "TT5VxNwqfEnG6la2a1Z34i_7K70",
+      "id": "bMeeaL_cxcP8LA-S5iRr_UzyYvEdTUuwMO59JOqJ2JE=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:48.293553Z",
+        "trackKind": "standard",
+        "language": "es-419",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "eucPbqfwoIylojBHzpSZBTTg1KU",
+      "id": "87p0w5zHo4vEq1deV232tz9Qg1EaZeBh",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T17:13:05.527323Z",
+        "trackKind": "standard",
+        "language": "es",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "GB1MTpyqJk3zGb3hNHWhx977DGg",
+      "id": "rrsFgTgJMGne7_nI6OjGHMbGnxdgR5Jf8GJOVEPqIys=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:37.325535Z",
+        "trackKind": "standard",
+        "language": "fa-IR",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "T5YDUGg4vq1XMTu_CZBHnxFHpUs",
+      "id": "87p0w5zHo4tTZyktBXSbvdlfql93N7Kb",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:55.015571Z",
+        "trackKind": "standard",
+        "language": "fa",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "zJutAp9dS1CwyamGTgqPbaSO9bk",
+      "id": "87p0w5zHo4vhhUVzynLuwgxCTZAWH9pA",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:46.285665Z",
+        "trackKind": "standard",
+        "language": "fi",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "sx5NgENpOhU8fl86vWI0psMUG7U",
+      "id": "87p0w5zHo4t9L7RARH6xG49niov_ugIQ",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-13T17:27:42.998099Z",
+        "trackKind": "standard",
+        "language": "fr",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "Aflqmp-jX4X4zTv1YGBdEzOpMmY",
+      "id": "87p0w5zHo4svkpJ22NpRyIcvKNR0PLZv",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:35.278475Z",
+        "trackKind": "standard",
+        "language": "hi",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "VqG2NdeAOFU6CV5jS58eH-i1pc8",
+      "id": "87p0w5zHo4sFgRdhAIdnERg2B8lJ2z3s",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:28.209504Z",
+        "trackKind": "standard",
+        "language": "hr",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "s-V8uuACKbOa55ynUNlNuL_1D48",
+      "id": "87p0w5zHo4tE10PX6rd8BW3kB4BGCSQb",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-15T10:40:28.119751Z",
+        "trackKind": "standard",
+        "language": "hu",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "FQF-jrb2zxGIaJ3xVGpMxFIf8-A",
+      "id": "87p0w5zHo4vYq3QeDDDQPoY8EZarPHZW",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-13T12:25:48.643878Z",
+        "trackKind": "standard",
+        "language": "id",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "RyzOF7xX1cmpZeLgfj3C9r3sXfI",
+      "id": "87p0w5zHo4snqYIXEUtOnCdFr6kvRX2N",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T15:24:54.744545Z",
+        "trackKind": "standard",
+        "language": "it",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "2wcqxLMGpXv82tFcvd3VR2biYpI",
+      "id": "87p0w5zHo4sAj1H3hT184mKEt0gH__Ma",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-12-22T00:06:16.31905Z",
+        "trackKind": "standard",
+        "language": "iw",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "3lT3GZkXDNTPvtm71DiWiKG57vA",
+      "id": "87p0w5zHo4tQfuaqYdhyQR4kB-A5JmCC",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T18:04:33.373876Z",
+        "trackKind": "standard",
+        "language": "ja",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "bI9f4tJlDQvzRYS5AjWBoRqIkRQ",
+      "id": "87p0w5zHo4tMRwmxkAqaTt0pqVdsV4UF",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T15:52:12.715436Z",
+        "trackKind": "standard",
+        "language": "ko",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "sx34mlupJi6LASu38Z0cOOsn6-k",
+      "id": "87p0w5zHo4v7i0AHpBRLl3I2EsP0b1LE",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:44.443633Z",
+        "trackKind": "standard",
+        "language": "lt",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "mnZ-lB8xpIV76CSaFrxmfgB-c5Y",
+      "id": "87p0w5zHo4u4QBQsZeSD3-aDg6SgToSn",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:30.485622Z",
+        "trackKind": "standard",
+        "language": "lv",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "dDIzaioHBtvXZEBJ44Vtcqlq72A",
+      "id": "87p0w5zHo4usw89vCV7GuNJrrQQSyHVk",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-13T08:45:15.593683Z",
+        "trackKind": "standard",
+        "language": "nl",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "HfClEAUSM_8natvIGk7tR_DQijg",
+      "id": "87p0w5zHo4ttQXbDL-MepTIzZ9CFBt7F",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2019-03-27T23:10:54.698815Z",
+        "trackKind": "standard",
+        "language": "no",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "g068TqKedZ36xGC8Hs5FT8pJ0R0",
+      "id": "87p0w5zHo4t-ocYktBDw4Nnh4L12yKy1",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-13T09:25:47.189353Z",
+        "trackKind": "standard",
+        "language": "pl",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "o90Oov8yL8dhDhx2CfW0vzygJVc",
+      "id": "rrsFgTgJMGk5HXw7xTjQmFgDwzcUPC3lJJZQkuW0SH8=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:42.997374Z",
+        "trackKind": "standard",
+        "language": "pt-BR",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "vj4SGCTEKs1bveefhkndP6azPhQ",
+      "id": "87p0w5zHo4veuiDO6hLH9ivu7VOo9kRr",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T19:55:21.206453Z",
+        "trackKind": "standard",
+        "language": "pt",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "LT4sLbCPwV6t_j3x4vzcStP3LKk",
+      "id": "87p0w5zHo4vMyYG_XKCfAubLzuYriPA-",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:58.812906Z",
+        "trackKind": "standard",
+        "language": "ro",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "l1vRPbG54XCfgyjvJROavRxzjHw",
+      "id": "87p0w5zHo4u5x-M0xDwNO36o5DWzZrH5",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-13T05:16:12.993669Z",
+        "trackKind": "standard",
+        "language": "ru",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "g7uuFY63wNezL6FxIpkoEm8b51I",
+      "id": "87p0w5zHo4uM_x3ww61xE4jjyL9PXNkN",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:40.632638Z",
+        "trackKind": "standard",
+        "language": "sk",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "XFPVBRYDfGXazSquiTA8XMSAR_8",
+      "id": "87p0w5zHo4sSQDbjdOfLbN6Z7SpHvGmH",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:51.715852Z",
+        "trackKind": "standard",
+        "language": "sr",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "8CKNxM_yo1BmpkXaEC6wvkT1Rek",
+      "id": "87p0w5zHo4v2jS_FFwWgQHCwtL4f0TK7",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:39.004813Z",
+        "trackKind": "standard",
+        "language": "ta",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "D4eDyue43JbY9-R-CRGqgAWyTqc",
+      "id": "87p0w5zHo4vnLQ_fkK77UfvyuB3tkghO",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-15T06:03:14.560331Z",
+        "trackKind": "standard",
+        "language": "th",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "PsYv3sVvWAbyr2uPNOQf4BTxYtg",
+      "id": "87p0w5zHo4sEpu2kKLrHJXJl8cf0S9xJ",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-12-28T13:43:24.032395Z",
+        "trackKind": "standard",
+        "language": "tr",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "UM9iOf_Z2zecz1vAQIdzJbFllIs",
+      "id": "87p0w5zHo4t53IxsWDXV4_ZIMN8k07UX",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-12T23:16:31.277034Z",
+        "trackKind": "standard",
+        "language": "vi",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "OIlD2eLoJsD-NMbGAPUPyGz54Hc",
+      "id": "rrsFgTgJMGmjGSPIt-P9hZGrKznlJIDFjIlnDQXY_So=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:55.608995Z",
+        "trackKind": "standard",
+        "language": "zh-CN",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "hQ6ZwCmZqVtDyw3UQuH8wU40FkM",
+      "id": "XLGQNLkQ6OwGlbYeQzSZTH_a3rXlWwUZoE1yzaiigGU=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2020-09-26T08:14:32.938801Z",
+        "trackKind": "standard",
+        "language": "zh-Hans",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "1fVQS5fYGC0H1TzmKYNB_ufqLzQ",
+      "id": "rrsFgTgJMGmjGSPIt-P9hU0rFolECXWaemLX24RgM6I=",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-16T12:20:49.413686Z",
+        "trackKind": "standard",
+        "language": "zh-TW",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "mTcR-F4dFi4vag8EaFpjDUGqQeY",
+      "id": "87p0w5zHo4t-jSrH1a9pyfxTl_FlbOyF",
+      "snippet": {
+        "videoId": "9P6rdqiybaw",
+        "lastUpdated": "2018-08-25T13:42:26.570092Z",
+        "trackKind": "standard",
+        "language": "zh",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  ]
+}
