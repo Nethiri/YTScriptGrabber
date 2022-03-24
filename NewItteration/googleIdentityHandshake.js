@@ -1,3 +1,4 @@
+var myclient;
 
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
@@ -6,7 +7,7 @@ function handleCredentialResponse(response) {
     var xhr = new XMLHttpRequest();
   xhr.open('GET',
     'https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw' +
-    '&access_token=' + response.credential + '&key=' + "AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU" + '&tlang=' + 'en');
+    '&access_token=' + response.credential + '&tlang=' + 'en');
   xhr.onreadystatechange = function (e) {
   console.log(xhr.response);
 };
@@ -19,7 +20,7 @@ xhr.send(null);
 }
 
 window.onload = function () {
-  google.accounts.id.initialize({
+  myclient = google.accounts.id.initialize({
     client_id: "787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com",
     callback: handleCredentialResponse
   });
