@@ -5,7 +5,7 @@ function handleCredentialResponse(response) {
 
     var xhr = new XMLHttpRequest();
   xhr.open('GET',
-    'https://www.googleapis.com/youtube/v3/captions?videoId=9P6rdqiybaw' +
+    'https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw' +
     '&access_token=' + response.credential + '&key=' + "AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU" + '&tlang=' + 'en');
   xhr.onreadystatechange = function (e) {
   console.log(xhr.response);
