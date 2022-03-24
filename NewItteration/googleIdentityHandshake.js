@@ -31,4 +31,12 @@ window.onload = function () {
   google.accounts.id.prompt(); // also display the One Tap dialog
 }
 
+var MyCallback;
+function getToken() {
+  google.accounts.id.initialize({
+    client_id: "787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com",
+    callback: MyCallback
+  });
 
+  google.accounts.id.prompt();
+}
