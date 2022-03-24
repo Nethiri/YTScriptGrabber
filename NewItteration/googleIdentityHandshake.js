@@ -2,8 +2,20 @@
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
     //request following
+
+    var xhr = new XMLHttpRequest();
+  xhr.open('GET',
+    'https://www.googleapis.com/youtube/v3/captions?id=9P6rdqiybaw&' +
+    'access_token=' + response.credential);
+  xhr.onreadystatechange = function (e) {
+  console.log(xhr.response);
+};
+xhr.send(null); 
+
+    /*
     var request =  gapi.client.youtube.captions.download({'id': '9P6rdqiybaw'});
     request.execute(function(response) { console.log(response) });
+    */
 }
 
 window.onload = function () {
