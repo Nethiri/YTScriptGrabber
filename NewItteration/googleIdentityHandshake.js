@@ -42,6 +42,21 @@ function OldOnloadFunction() {
   google.accounts.id.prompt(); // also display the One Tap dialog
 }
 
+function OldOnloadFunction2() {
+  google.accounts.id.initialize({
+    'apiKey': 'AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU',
+    'clientId': '787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com',
+    'scope': 'https://www.googleapis.com/auth/youtube.force-ssl',
+    callback: handleCredentialResponse
+  });
+  google.accounts.id.renderButton(
+    document.getElementById("buttonDiv"),
+    { theme: "outline", size: "large" }  // customization attributes
+  );
+  google.accounts.id.prompt(); // also display the One Tap dialog
+}
+
+
 
 var MyCallback;
 function getToken() {
