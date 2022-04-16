@@ -54,7 +54,7 @@ function test_getSubTitles() {
 
 function test2_getSubtitles() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw&tlang=en")
+    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw?tlang=en")
     xhr.setRequestHeader('Authorization', 'Bearer ' + access_token)
     xhr.onreadystatechange = function(e) {
         console.log(xhr.response);
