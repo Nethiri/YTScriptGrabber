@@ -30,7 +30,6 @@ var api_key = "AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU";
 function initClient() {
     client = google.accounts.oauth2.initTokenClient({
         client_id: "787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com",
-    
         scope: "https://www.googleapis.com/auth/youtube.force-ssl",
         callback: (tokenresponse) => {
             access_token = tokenresponse.access_token;
@@ -81,6 +80,8 @@ function test3_getSubtitles() {
     xhr.send(null);
 }
 
+
+
 //Part1
 
 /*
@@ -117,6 +118,16 @@ function test3_getSubtitles(){
 }
 */
 
+function list_subtitles() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://www.googleapis.com/youtube/v3/captions?part=id&videoId=9P6rdqiybaw");
+    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+    xhr.onload = function(e) {
+        response = JSON.parse(xhr.response);
+        response["items"].map((item)=>{console.log(item["id"])});
+    }
+    xhr.send(null);
+}
 
 
 
