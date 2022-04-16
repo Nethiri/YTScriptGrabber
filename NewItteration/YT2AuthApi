@@ -1,5 +1,7 @@
-let testToken
 
+
+/*
+let testToken
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
     testToken = response.credential;
@@ -16,4 +18,27 @@ window.onload = function () {
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
 }
+*/
+
+var client;
+var access_token;
+
+function initClient() {
+    client = google.accounts.oauth2.initTokenClient({
+        client_id: "787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com",
+        scope: "https://www.googleapis.com/auth/youtube.force-ssl",
+        callback: (tokenresponse) => {
+            access_token = tokenresponse.access_token;
+        },
+    });
+}
+function getToken() {
+    client.requestAccessToken();
+}
+function revokeToken() {
+    google.accounts.oauth2.revoke(access_token, () => {console.log('access token revoked')});
+}
+
+
+
 
