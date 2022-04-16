@@ -39,6 +39,11 @@ function revokeToken() {
     google.accounts.oauth2.revoke(access_token, () => {console.log('access token revoked')});
 }
 
-
-
-
+function test_getSubTitles() {
+    var xhr = new XMLDocument();
+    xhr.open('GET', 'https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw' + "&access_token=" + access_token + '&tlang=' + 'en');
+    xhr.onreadystatechange = function(e) {
+        console.log(xhr.response);
+    }
+    xhr.send(null);
+}
