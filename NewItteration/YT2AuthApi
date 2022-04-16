@@ -20,6 +20,9 @@ window.onload = function () {
 }
 */
 
+
+
+
 var client;
 var access_token;
 
@@ -51,7 +54,51 @@ function test_getSubTitles() {
 
 function test2_getSubtitles() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw")
-    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token, 'tlang ' + 'en', 'tfmt ' + "sbv")
-    xhr.send();
+    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw&tlang=en")
+    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token)
+    xhr.onreadystatechange = function(e) {
+        console.log(xhr.response);
+    }
+    xhr.send(null);
 }
+
+
+//Part1
+
+/*
+var GoogleAuth;
+var SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl"
+
+function handleClientLoad() {
+
+    gapi.load('client:auth2', initClient)
+}
+
+function initClient() {
+    gapi.client.init({
+        'apiKey': 'AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU',
+        'clientId': '787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com',
+        'scope': SCOPE
+    }).then(function(){
+        GoogleAuth = gapi.auth2.getAuthInstance();
+        
+    })
+}
+
+
+
+function test3_getSubtitles(){
+    var request = client.youtube.captions.download({
+        'id': '9P6rdqiybaw',
+        'tlang': 'en'
+    });
+
+    request.execute(function(response) {
+        console.log(response);
+    });
+}
+*/
+
+
+
+
