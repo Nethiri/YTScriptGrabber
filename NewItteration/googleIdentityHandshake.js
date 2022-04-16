@@ -43,8 +43,6 @@ function OldOnloadFunction() {
 }
 
 
-
-
 function newCallbackFunction(response) {
   console.log("Encoded JWT ID token: " + response.credential);
   //request following
@@ -90,6 +88,10 @@ function trydathing() {
 //=========Promise==================
 //=================================
 
+//https://developers.google.com/youtube/v3/guides/auth/client-side-web-apps#js-client-library
+
+
+
 var GoogleAuth; 
 function initClient() {
   gapi.client.init({
@@ -105,3 +107,21 @@ function initClient() {
 });
 
 }
+
+function start() {
+  gapi.client.init({
+    'apiKey': 'AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU',
+    'clientId': '787718893823-ief5upq817odgurk45ga691p9m3ejd57.apps.googleusercontent.com',
+    'scope': 'https://www.googleapis.com/auth/youtube.force-ssl'
+  })
+};
+
+gapi.load('client', start);
+
+//gapi.client.getToken().id_token
+
+
+
+
+
+//==================================

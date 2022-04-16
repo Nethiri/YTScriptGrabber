@@ -1,7 +1,3 @@
-
-
-
-
 GET https://youtube.googleapis.com/youtube/v3/captions/9P6rdqiybaw?onBehalfOf=AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU HTTP/1.1
 
 Authorization: Bearer [YOUR_ACCESS_TOKEN]
