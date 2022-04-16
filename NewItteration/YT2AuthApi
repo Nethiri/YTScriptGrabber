@@ -40,10 +40,18 @@ function revokeToken() {
 }
 
 function test_getSubTitles() {
-    var xhr = new XMLDocument();
+    var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw' + "&access_token=" + access_token + '&tlang=' + 'en');
     xhr.onreadystatechange = function(e) {
         console.log(xhr.response);
     }
     xhr.send(null);
+}
+
+
+function test2_getSubtitles() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions")
+    xhr.setRequestHeader('application/json', 'Authorization', 'Bearer ' + access_token)
+    xhr.send();
 }
