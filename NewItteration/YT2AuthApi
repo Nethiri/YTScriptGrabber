@@ -25,6 +25,7 @@ window.onload = function () {
 
 var client;
 var access_token;
+var api_key = AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU;
 
 function initClient() {
     client = google.accounts.oauth2.initTokenClient({
@@ -54,9 +55,10 @@ function test_getSubTitles() {
 
 function test2_getSubtitles() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://www.googleapis.com/youtube/v3/captions/9P6rdqiybaw?tlang=en")
-    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token)
+    xhr.open('GET', "https://youtube.googleapis.com/youtube/v3/captions/9P6rdqiybaw?tlang=en&key="+ api_key)
     xhr.setRequestHeader('Accept', "application/json")
+    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token)
+    
     xhr.onreadystatechange = function(e) {
         console.log(xhr.response);
     }
