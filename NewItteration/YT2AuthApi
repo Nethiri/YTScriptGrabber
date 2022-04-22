@@ -131,19 +131,33 @@ function list_subtitles() {
 
 async function returnSubtitles(token) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=token")
-    return xhr;    
+    xhr.open("GET", "https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=" + token, true)
+    xhr.onload = function(e) {
+        return xhr;
+    }
+    xhr.send(null); 
+    return xhr;
 }
 
 function process(val) {
-    var xhr = new XMLHttpRequest();
-    var xhr = val;
+    var xhr = new XMLHttpRequest(val);
     xhr.onload = function(e) {
         response = JSON.parse(xhr.response);
         respone["items"].map((item)=>{console.log(item["id"])});
     }
     xhr.send(null);
 }
+
+async function returnSubtitleJson(token) {
+    fetch("https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=" + token)
+    .then(res => res.json())
+    then((out)=>{
+        console.log('Check this JSON!', out);
+    })
+    .catch(err => {throw new err});
+}
+
+
 
 
 
