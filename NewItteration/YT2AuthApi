@@ -36,6 +36,19 @@ function initClient() {
         },
     });
 }
+
+
+
+function initClientServer() {
+    client = google.accounts.oauth2.initTokenClient({
+        client_id: "787718893823-vc2f0ts3hm6jc4dq3657m3h16vm5t1ge.apps.googleusercontent.com",
+        scope: "https://www.googleapis.com/auth/youtube.force-ssl",
+        callback: (tokenresponse) => {
+            access_token = tokenresponse.access_token;
+        },
+    });
+}
+
 function getToken() {
     client.requestAccessToken();
 }
