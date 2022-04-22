@@ -129,15 +129,22 @@ function list_subtitles() {
     xhr.send(null);
 }
 
-function returnSubtitles() {
+async function returnSubtitles(token) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=AIzaSyA1vxM7_wIUwgdXvmTDa_MSimBUiEeozsE")
+    xhr.open("GET", "https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=token")
+    return xhr;    
+}
+
+function process(val) {
+    var xhr = new XMLHttpRequest();
+    var xhr = val;
     xhr.onload = function(e) {
         response = JSON.parse(xhr.response);
         respone["items"].map((item)=>{console.log(item["id"])});
     }
     xhr.send(null);
 }
+
 
 
 
