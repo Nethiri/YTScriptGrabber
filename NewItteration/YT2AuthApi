@@ -164,13 +164,26 @@ function process(val) {
 async function returnSubtitleJson(token) {
     fetch("https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=" + token)
     .then(res => res.json())
-    then((out)=>{
+    .then((out)=>{
         console.log('Check this JSON!', out);
     })
     .catch(err => {throw new err});
 }
 
+function test4_getSubtitles() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://youtube.googleapis.com/youtube/v3/captions/87p0w5zHo4uYl2v_9YX8kX-YUfGHZuI4?tfmt=ttml&tlang=en");
+    xhr.setRequestHeader('Accept', "application/json");
+    xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+    xhr.setRequestHeader('Origin', "https://nethiri.github.io");
 
+    xhr.onload = function(e) {
+        console.log(xhr.readyState);
+        console.log(access_token);
+        console.log(xhr.response);
+    }
+    xhr.send(null);
+}
 
 
 
