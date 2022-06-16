@@ -16,6 +16,7 @@ def returnVideoLangages(vidID):
     except Exception as e:
         print(e)
         print("VidID: " + vidID)
+        return -1
 
     ret = []
     for lang in languages:
