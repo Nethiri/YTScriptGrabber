@@ -1,3 +1,5 @@
+#test URL: http://localhost:9988/?vidID=9P6rdqiybaw&vidLangCode=en
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from youtube_transcript_api import YouTubeTranscriptApi as YTTranscriptAPI
 import urllib.parse as urlparse
