@@ -25,7 +25,7 @@ window.onload = function () {
 
 var client;
 var access_token;
-var api_key = "AIzaSyDg6gpX1vRkWQ-d4sWFrJMelJEga2zlNrU";
+var api_key = "AIzaSyA1vxM7_wIUwgdXvmTDa_MSimBUiEeozsE";
 
 function initClient() {
     client = google.accounts.oauth2.initTokenClient({
@@ -161,21 +161,29 @@ function process(val) {
     xhr.send(null);
 }
 
-async function returnSubtitleJson(token) {
-    fetch("https://youtube.googleapis.com/youtube/v3/captions/TgEjFJuWiw0tUf7sZ-q3K6Nm9HQ?tfmt=ttml&tlang=en&key=" + token)
+async function returnSubtitleJson() {
+    await fetch("https://youtube.googleapis.com/youtube/v3/captions/UckBoD9o49_iEIEUFrm0baf-0JEbPoP5KbBFMKSCXbc=?tfmt=ttml&tlang=en&key=" + api_key, {
+        'credentials': 'include', headers: new Headers(
+            {
+            'Accept': "application/json", 
+            'Authorization': 'Bearer ' + access_token
+            })
+        }
+    )
     .then(res => res.json())
     .then((out)=>{
         console.log('Check this JSON!', out);
     })
-    .catch(err => {throw new err});
+    
 }
 
-function test4_getSubtitles() {
+function test4_getSubtitles(access_token) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://youtube.googleapis.com/youtube/v3/captions/87p0w5zHo4uYl2v_9YX8kX-YUfGHZuI4?tfmt=ttml&tlang=en");
+    //my vid: UckBoD9o49_iEIEUFrm0baf-0JEbPoP5KbBFMKSCXbc=
+    xhr.open('GET', "https://youtube.googleapis.com/youtube/v3/captions/87p0w5zHo4uYl2v_9YX8kX-YUfGHZuI4?tfmt=ttml&tlang=en&key=" + api_key);
+    xhr.withCredentials=true;
     xhr.setRequestHeader('Accept', "application/json");
     xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
-    xhr.setRequestHeader('Origin', "https://nethiri.github.io");
 
     xhr.onload = function(e) {
         console.log(xhr.readyState);
@@ -184,7 +192,6 @@ function test4_getSubtitles() {
     }
     xhr.send(null);
 }
-
 
 
 
