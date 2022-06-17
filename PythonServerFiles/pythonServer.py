@@ -65,6 +65,7 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
                 return
             self.send_response(200)
             self.send_header('content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*') #not good!
             self.end_headers()
             self.wfile.write(json.dumps(jsonFile).encode())
             return
@@ -79,6 +80,7 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
                 return
             self.send_response(200)
             self.send_header('content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*') #not good!
             self.end_headers()
             self.wfile.write(json.dumps(jsonFile).encode())
             return
