@@ -29,9 +29,9 @@ COMPARE_FUNKTIONS.alphabetZtoA = function(a,b) {
 }
 const WIDTH = 600;
 const HIGHT = 600;
-const VIDEOLINK = "https://video.google.com/timedtext?v="
-const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
-const LANGUAGEADD = "&lang="
+//const VIDEOLINK = "https://video.google.com/timedtext?v="
+//const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
+//const LANGUAGEADD = "&lang="
 
 const REQUESTSERVER = "http://vfjaarqeja57cofx.myfritz.net:9988/?"
 const VIDEOID = "vidID="
@@ -69,7 +69,7 @@ async function setVideo(video) {
     for(let l of languageList){
         let option = document.createElement("OPTION");
         option.value = l.code;
-        option.appendChild(document.createTextNode(l.languageName));
+        option.appendChild(document.createTextNode(l.name));
         select.appendChild(option);
     }
     document.getElementById("platzfuerselect").innerHTML = "";
@@ -78,7 +78,7 @@ async function setVideo(video) {
     nextButton.type = "BUTTON";
     nextButton.value="OK";
     nextButton.onclick = async function() {
-        curTranscript = getText(await loadTranscript(video, select.value));
+        curTranscript = await loadTranscript(video, select.value);
         texthaufen = transcripttotext();
         renderText();
         sortTableFunctions();
@@ -89,17 +89,18 @@ async function setVideo(video) {
 async function getLanguageList(videoID) {
     var request = new XMLHttpRequest(); 
     //request.open("GET", VIDEOLANGAUGE + videoID, true);
-    request.open("GET", REQUESTSERVER + videoID);
-    request.responseType = 'document';
-    request.overrideMimeType('text/xml');
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID);
+    //request.responseType = 'document';
+    request.responseType = "json";
+    //request.overrideMimeType('text/xml');
     return new Promise(function(resolve, reject) {
         request.onload = function () {
             if (request.readyState === request.DONE) {
               if (request.status === 200) {
-                resolve(parseLanguageList(request.responseXML));
+                resolve(request.response);
               }
               else{
-                  reject(request.status);
+                reject(request.status);
               }
             }
           };
@@ -120,14 +121,15 @@ return ret;
 
 async function loadTranscript(videoID, language){
     var request = new XMLHttpRequest();
-    request.open("GET", VIDEOLINK + videoID + LANGUAGEADD + language, true);
-    request.responseType = 'document';
-    request.overrideMimeType('text/xml');
+    //request.open("GET", VIDEOLINK + videoID + LANGUAGEADD + language, true);
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID + "&" + VIDEOLANG + language);
+    request.responseType = 'json';
+    //request.overrideMimeType('text/xml');
     return new Promise(function(resolve, reject) {
         request.onload = function () {
             if (request.readyState === request.DONE) {
               if (request.status === 200) {
-                resolve(request.responseXML);
+                resolve(request.response);
               }
               else{
                   reject(request.status);
@@ -138,14 +140,15 @@ async function loadTranscript(videoID, language){
     });
 }
 
-function getText(xmldoc) {
-    let textList = xmldoc.childNodes[0];
+function getText(jsonDoc) {
+    //no longer needed
+    let textList = jsonDoc.childNodes[0];
     let TimeStamps = textList.childNodes;
     let ret = [];
     for(let ts of TimeStamps){
         ret.push({start: ts.attributes.start.value * 1, duration: ts.attributes.dur.value * 1, textsnipit: ts.childNodes[0].data})
     }
-    return ret;
+    return ret;   
 }
 
 function renderText() {
@@ -155,7 +158,7 @@ function renderText() {
     for(let entr of curTranscript) {
         let tbOPEN = false;
         let span = document.createElement("SPAN")
-        span.innerHTML = entr.textsnipit;
+        span.innerHTML = entr.text;
         span.innerHTML += " "
         span.addEventListener("click", function(e) {
             console.log(e);
@@ -170,17 +173,17 @@ function renderText() {
             span.innerHTML = "";
             let tbtemp = document.createElement("INPUT");
             tbtemp.type = "Text";
-            tbtemp.value = entr.textsnipit;
-            tbtemp.size = 1.1 * entr.textsnipit.length;
+            tbtemp.value = entr.text;
+            tbtemp.size = 1.1 * entr.text.length;
             tbtemp.onchange = function() {
-                entr.textsnipit = tbtemp.value;
+                entr.text = tbtemp.value;
             }
             span.appendChild(tbtemp);
             tbtemp.focus();
             tbtemp.addEventListener("focusout", function() {
                 tbOPEN = false;
-                entr.textsnipit = tbtemp.value;
-                span.innerHTML = entr.textsnipit + " ";
+                entr.text = tbtemp.value;
+                span.innerHTML = entr.text + " ";
                 texthaufen = transcripttotext();
                 sortTableFunctions();
             })
@@ -209,7 +212,7 @@ function highlightText(currentpos) {
 
 function hightlightWord(suchword) {
     for(let i = 0; i < curTranscript.length; i++) {
-        let textToCheck = curTranscript[i].textsnipit;
+        let textToCheck = curTranscript[i].text;
         let res = textToCheck.split(" ");
         transcriptSpans[i].innerHTML = "";
         for(let word of res) {
@@ -227,7 +230,7 @@ function hightlightWord(suchword) {
 function transcripttotext() {
     let ret = "";
     for(let txt of curTranscript) {
-        ret+= txt.textsnipit + " ";
+        ret+= txt.text + " ";
     }
     let txtb = document.createElement("textarea");
     txtb.innerHTML = ret;
