@@ -33,6 +33,10 @@ const VIDEOLINK = "https://video.google.com/timedtext?v="
 const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
 const LANGUAGEADD = "&lang="
 
+const REQUESTSERVER = "http://vfjaarqeja57cofx.myfritz.net:9988/?"
+const VIDEOID = "vidID="
+const VIDEOLANG ="vidLangCode="
+
 async function startProg() {
     await loadYTAPI();
     //await setVideo("https://www.youtube.com/watch?v=HZ4HdhKJITI");    
@@ -58,10 +62,7 @@ async function setVideo(video) {
             document.getElementById("PlatzhalterfuerTextBox").innerHTML = "";
         }
     }
-    
-    
     //console.log(video);
-
 
     let languageList = await getLanguageList(video);
     let select = document.createElement("SELECT");
@@ -87,7 +88,8 @@ async function setVideo(video) {
 
 async function getLanguageList(videoID) {
     var request = new XMLHttpRequest(); 
-    request.open("GET", VIDEOLANGAUGE + videoID, true);
+    //request.open("GET", VIDEOLANGAUGE + videoID, true);
+    request.open("GET", REQUESTSERVER + videoID);
     request.responseType = 'document';
     request.overrideMimeType('text/xml');
     return new Promise(function(resolve, reject) {
