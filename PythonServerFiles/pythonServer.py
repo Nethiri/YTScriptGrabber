@@ -51,10 +51,10 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
         except:
             #send error
             self.send_response(400)
+            self.send_header('content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write("Error 400 - Bad querry!".encode())
             return
-        
-
-
 
         #check what response should be given
         if {'vidID', 'vidLangCode'} <= request_query.keys():
@@ -64,6 +64,9 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
             if(jsonFile == -1): 
                 #error has encured
                 self.send_response(400)
+                self.send_header('content-type', 'text/plain')
+                self.end_headers()
+                self.wfile.write("Error 400 - Video script could not be found! (Possibly wrong language code)!".encode())
                 return
             self.send_response(200)
             self.send_header('content-type', 'application/json')
@@ -79,6 +82,9 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
             if(jsonFile == -1):
                 #error has encured
                 self.send_response(400)
+                self.send_header('content-type', 'text/plain')
+                self.end_headers()
+                self.wfile.write("Error 400 - Video languages could not be found! (Possible no subtitles, or bad video ID)!".encode())
                 return
             self.send_response(200)
             self.send_header('content-type', 'application/json')
@@ -89,6 +95,8 @@ class YTScriptGrabbingService(BaseHTTPRequestHandler):
         
         #either only vidLangCode is present or a wrong query is present
         self.send_response(400)
+        self.end_headers()
+        self.wfile.write("Error 400 - !!Unknown!!".encode())
         return
 
 def main():
