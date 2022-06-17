@@ -95,10 +95,10 @@ def main():
     PORT = 9988
     server = HTTPServer(('', PORT), YTScriptGrabbingService)
     print('Server running on port %s.' % PORT)
-    server.socket = ssl.wrap_socket(server.socket,
-    keyfile="~/Dekstop/YTScriptgrabber/key.pem",
-    certfile="~/Dekstop/YTScriptgrabber/cert.pem",
-    server_side=True)
+    #server.socket = ssl.wrap_socket(server.socket,
+    #keyfile="",
+    #certfile="",
+    #server_side=True)
 
     server.serve_forever()
 
