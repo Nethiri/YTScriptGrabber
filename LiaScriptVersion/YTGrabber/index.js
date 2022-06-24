@@ -169,7 +169,7 @@ function renderText() {
     for(let entr of curTranscript) {
         let tbOPEN = false;
         let span = document.createElement("SPAN")
-        span.innerHTML = entr.textsnipit;
+        span.innerHTML = entr.text;
         span.innerHTML += " "
         span.addEventListener("click", function(e) {
             console.log(e);
@@ -184,17 +184,17 @@ function renderText() {
             span.innerHTML = "";
             let tbtemp = document.createElement("INPUT");
             tbtemp.type = "Text";
-            tbtemp.value = entr.textsnipit;
-            tbtemp.size = 1.1 * entr.textsnipit.length;
+            tbtemp.value = entr.text;
+            tbtemp.size = 1.1 * entr.text.length;
             tbtemp.onchange = function() {
-                entr.textsnipit = tbtemp.value;
+                entr.text = tbtemp.value;
             }
             span.appendChild(tbtemp);
             tbtemp.focus();
             tbtemp.addEventListener("focusout", function() {
                 tbOPEN = false;
-                entr.textsnipit = tbtemp.value;
-                span.innerHTML = entr.textsnipit + " ";
+                entr.text = tbtemp.value;
+                span.innerHTML = entr.text + " ";
                 texthaufen = transcripttotext();
                 sortTableFunctions();
             })
@@ -223,7 +223,7 @@ function highlightText(currentpos) {
 
 function hightlightWord(suchword) {
     for(let i = 0; i < curTranscript.length; i++) {
-        let textToCheck = curTranscript[i].textsnipit;
+        let textToCheck = curTranscript[i].text;
         let res = textToCheck.split(" ");
         transcriptSpans[i].innerHTML = "";
         for(let word of res) {
@@ -241,7 +241,7 @@ function hightlightWord(suchword) {
 function transcripttotext() {
     let ret = "";
     for(let txt of curTranscript) {
-        ret+= txt.textsnipit + " ";
+        ret+= txt.text + " ";
     }
     let txtb = document.createElement("textarea");
     txtb.innerHTML = ret;
