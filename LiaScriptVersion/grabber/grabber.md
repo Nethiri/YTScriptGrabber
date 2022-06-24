@@ -36,14 +36,3 @@ link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/consys.css
 # Youtube Script Grabber 
 
 @gr
-
-<!--
-Links sammlung:
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/consys.js
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/grabber.js
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/grabber-lia-bridge.js
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/lul-lia-bridge.js
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/lul.js
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/lul.css
-https://cdn.jsdelivr.net/gh/kaptn-seebar/english-lia@latest/consys.css
--->
