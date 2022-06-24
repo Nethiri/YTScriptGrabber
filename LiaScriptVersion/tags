@@ -1,0 +1,321 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/kaptn_seebar/english-lia/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+.lia-checkbox	lul/styles/lul-generic.css	/^.lia-checkbox {$/;"	c
+.lia-input	lul/styles/lul-generic.css	/^.lia-input {$/;"	c
+.lia-radio	lul/styles/lul-generic.css	/^.lia-radio {$/;"	c
+.lul-background-text	lul/styles/lul-generic.css	/^.lul-background-text, .lul-background-text-hover:hover {$/;"	c
+.lul-background-text-hover:hover	lul/styles/lul-generic.css	/^.lul-background-text, .lul-background-text-hover:hover {$/;"	c
+.lul-collapsible-height	lul/styles/lul-collapsible.css	/^.lul-collapsible-height {$/;"	c
+.lul-collapsible-width	lul/styles/lul-collapsible.css	/^.lul-collapsible-width {$/;"	c
+.lul-dark	lul/styles/lul-generic.css	/^.lul-dark, .lul-dark-hover:hover {$/;"	c
+.lul-dark	lul/styles/lul-generic.css	/^.lul-dark, .lul-medium, .lul-light {$/;"	c
+.lul-dark	lul/styles/lul-generic.css	/^.lul-dark{$/;"	c
+.lul-dark-hover:hover	lul/styles/lul-generic.css	/^.lul-dark, .lul-dark-hover:hover {$/;"	c
+.lul-full-width	lul/styles/lul-generic.css	/^.lul-full-width {$/;"	c
+.lul-highlight-text	lul/styles/lul-generic.css	/^.lul-highlight-text, .lul-highlight-text-hover:hover {$/;"	c
+.lul-highlight-text-hover:hover	lul/styles/lul-generic.css	/^.lul-highlight-text, .lul-highlight-text-hover:hover {$/;"	c
+.lul-light	lul/styles/lul-generic.css	/^.lul-dark, .lul-medium, .lul-light {$/;"	c
+.lul-light	lul/styles/lul-generic.css	/^.lul-light {$/;"	c
+.lul-light	lul/styles/lul-generic.css	/^.lul-light, .lul-light-hover:hover {$/;"	c
+.lul-light-hover:hover	lul/styles/lul-generic.css	/^.lul-light, .lul-light-hover:hover {$/;"	c
+.lul-margin	lul/styles/lul-generic.css	/^.lul-margin {$/;"	c
+.lul-medium	lul/styles/lul-generic.css	/^.lul-dark, .lul-medium, .lul-light {$/;"	c
+.lul-medium	lul/styles/lul-generic.css	/^.lul-medium {$/;"	c
+.lul-medium	lul/styles/lul-generic.css	/^.lul-medium, .lul-medium-hover:hover {$/;"	c
+.lul-medium-hover:hover	lul/styles/lul-generic.css	/^.lul-medium, .lul-medium-hover:hover {$/;"	c
+.lul-norm-height	lul/styles/lul-generic.css	/^.lul-norm-height {$/;"	c
+.lul-overflow	lul/styles/lul-collapsible.css	/^.lul-overflow {$/;"	c
+.lul-overflow-parent	lul/styles/lul-collapsible.css	/^.lul-overflow-parent {$/;"	c
+.lul-padding	lul/styles/lul-generic.css	/^.lul-padding {$/;"	c
+.lul-text	lul/styles/lul-generic.css	/^.lul-text {$/;"	c
+0	consys/.babelrc.json	/^      "@babel\/env",$/;"	s	array:presets.0
+0	consys/.babelrc.json	/^    [$/;"	a	array:presets
+1	consys/.babelrc.json	/^      {$/;"	o	array:presets.0
+:root	lul/styles/lul-generic.css	/^:root {$/;"	s
+AnonymousFunction0e5d2e370100	grabber/transcript/transcript.js	/^      wordInstance.span.addEventListener('click', function () {$/;"	f
+AnonymousFunction0e5d2e370200	grabber/transcript/transcript.js	/^      watchFunction: function () {$/;"	f	function:TranscriptHandler.createTranscript
+AnonymousFunction0e5d2e370300	grabber/transcript/transcript.js	/^      reactFunction: function (currentTimeWordGroup) {$/;"	f	function:TranscriptHandler.createTranscript
+AnonymousFunction1248cb9c0100	lul/input.js	/^    input.addEventListener('input', function() {window[arg.name] = this.checked;});$/;"	f	function:genInput
+AnonymousFunction1248cb9c0200	lul/input.js	/^    input.addEventListener('input', function() {window[arg.name] = this.value;});$/;"	f	function:genInput
+AnonymousFunction134addf90100	grabber/main.js	/^      onConfirm: function(enteredQuery) {$/;"	f	function:Grabber.setVideoSelection
+AnonymousFunction134addf90200	grabber/main.js	/^      onConfirm: function(languageCode) {Grabber.setLanguage(videoId, languageCode);}$/;"	f	function:Grabber.setLanguageSelection
+AnonymousFunction134addf90300	grabber/main.js	/^      clickFunction:  function (nameWordGroup) {$/;"	f	function:Grabber.setStatsTable
+AnonymousFunction134addf90400	grabber/main.js	/^      onConfirm: function(searchTerm) {$/;"	f	function:Grabber.setSearch
+AnonymousFunction134addf90500	grabber/main.js	/^      onConfirm: function(excludeBool) {$/;"	f	function:Grabber.setExclude
+AnonymousFunction134addf90600	grabber/main.js	/^      onConfirm: function (comparator) {$/;"	f	function:Grabber.setSortSelection
+AnonymousFunction2356fc130100	grabber/table/table.js	/^        cell.addEventListener('click', function () {$/;"	f
+AnonymousFunction52777d710100	base/watch.js	/^  setInterval(function () {$/;"	f	function:watch
+AnonymousFunction6b0a7cd60100	lul/collapsible.js	/^  setTimeout(function () {$/;"	f	function:genCollapsible
+AnonymousFunction6b0a7cd60200	lul/collapsible.js	/^      toggle.addEventListener('click', function () {$/;"	f	function:genCollapsible.AnonymousFunction6b0a7cd60100
+AnonymousFunction6b0a7cd60300	lul/collapsible.js	/^      hover.addEventListener('mouseenter', function () {$/;"	f
+AnonymousFunction6b0a7cd60400	lul/collapsible.js	/^      hover.addEventListener('mouseleave', function () {$/;"	f
+AnonymousFunction6b0a7cd60500	lul/collapsible.js	/^  requestAnimationFrame(function() {$/;"	f	function:collapseElement
+AnonymousFunction6b0a7cd60600	lul/collapsible.js	/^    requestAnimationFrame(function() {$/;"	f	function:collapseElement.AnonymousFunction6b0a7cd60500
+AnonymousFunction929ee7400100	lul/overflow.js	/^  requestAnimationFrame(function () {$/;"	f	function:genOverflow
+AnonymousFunction929ee7400200	lul/overflow.js	/^    setTimeout(function () {$/;"	f	function:genOverflow.AnonymousFunction929ee7400100
+AnonymousFunction95b83e320100	lul/selection.js	/^    buttonRadio.addEventListener('click', function () {$/;"	f
+AnonymousFunction9d874b9d0100	grabber/youtube/youtube.js	/^    await new Promise(function(resolve,reject) {$/;"	f	function:YoutubeHandler.loadYTAPI
+AnonymousFunction9d874b9d0200	grabber/youtube/youtube.js	/^    await new Promise(function(resolve,reject) {$/;"	f	function:YoutubeHandler.setPlayerVideo
+AnonymousFunctiona62b323a0100	grabber/youtube/transcript.js	/^  return new Promise(function(resolve, reject) {$/;"	f	function:getXMLDocFromLink
+AnonymousFunctionfb3bef250100	grabber/interface.js	/^      onclick: function(){$/;"	f	function:InterfaceHandler.genEnterEntry
+AnonymousFunctionfb3bef250200	grabber/interface.js	/^      onclick: function () {onConfirm(window['selectedLanguageCode']);}$/;"	f	function:InterfaceHandler.genLanguageSelection
+AnonymousFunctionfb3bef250300	grabber/interface.js	/^      oninput: function () {$/;"	f	function:InterfaceHandler.genSortSelection
+AnonymousFunctionfb3bef250400	grabber/interface.js	/^      oninput: function() {$/;"	f	function:InterfaceHandler.genSearch
+AnonymousFunctionfb3bef250500	grabber/interface.js	/^      oninput: function() {$/;"	f	function:InterfaceHandler.genExclude
+COLLAPSIBLE_CLASS_MAP	lul/embed.js	/^    this.COLLAPSIBLE_CLASS_MAP = {$/;"	c	class:LulConfig.constructor
+COMPATATORS	grabber/table/sort.js	/^const COMPATATORS = {$/;"	c
+Container	consys/container.js	/^export class Container extends Sizeable {$/;"	c
+ContainerHandler	grabber/container/container.js	/^export class ContainerHandler extends ContainerLayoutHandler {$/;"	c
+ContainerLayoutHandler	grabber/container/layout.js	/^export class ContainerLayoutHandler {$/;"	c
+DEFAULT_ID	grabber/default-config.js	/^  DEFAULT_ID: 'fDek6cYijxI',$/;"	p	class:defaultConfig
+DEFAULT_SPAN_CLASS	grabber/default-config.js	/^  DEFAULT_SPAN_CLASS: 'lul-text',$/;"	p	class:defaultConfig
+EXCLUDE_BOX_CLASS	grabber/default-config.js	/^  EXCLUDE_BOX_CLASS: ' lul-margin',$/;"	p	class:defaultConfig
+EXCLUDE_TEXT	grabber/default-config.js	/^  EXCLUDE_TEXT: 'Exclude small words',$/;"	p	class:defaultConfig
+Get Language Code	grabber/other.md	/^# Get Language Code$/;"	c
+Grabber	grabber/main.js	/^class Grabber {$/;"	c
+HIGHLIGHT_SPAN_CLASS	grabber/default-config.js	/^  HIGHLIGHT_SPAN_CLASS: 'lul-highlight-text',$/;"	p	class:defaultConfig
+HIGHLIGHT_TEXT_INTERVAL	grabber/default-config.js	/^  HIGHLIGHT_TEXT_INTERVAL: 500,$/;"	p	class:defaultConfig
+HighlightHandler	grabber/transcript/highlight.js	/^export class HighlightHandler {$/;"	c
+ID_ENTER_ENTRY_DIRECTION	grabber/default-config.js	/^  ID_ENTER_ENTRY_DIRECTION: 'row',$/;"	p	class:defaultConfig
+ID_ENTER_TEXT	grabber/default-config.js	/^  ID_ENTER_TEXT: 'Enter Link',$/;"	p	class:defaultConfig
+INPUT_ELEMENTS	lul/embed.js	/^    this.INPUT_ELEMENTS = {$/;"	c	class:LulConfig.constructor
+InterfaceHandler	grabber/interface.js	/^export class InterfaceHandler {$/;"	c
+LANGUAGEADD	grabber/youtube/transcript.js	/^const LANGUAGEADD = '&lang=';$/;"	C
+LANGUAGE_SELECT_ENTRY_DIRECTION	grabber/default-config.js	/^  LANGUAGE_SELECT_ENTRY_DIRECTION: 'column',$/;"	p	class:defaultConfig
+LANGUAGE_SELECT_RADIO_TYPE	grabber/default-config.js	/^  LANGUAGE_SELECT_RADIO_TYPE: 'radio',$/;"	p	class:defaultConfig
+LANGUAGE_SELECT_TEXT	grabber/default-config.js	/^  LANGUAGE_SELECT_TEXT: 'Select language',$/;"	p	class:defaultConfig
+LulConfig	lul/embed.js	/^export class LulConfig {$/;"	c
+NAME_DICT	consys/orientation.js	/^const NAME_DICT = [$/;"	C
+NameAnalyzer	grabber/table/name-analyzer.js	/^export class NameAnalyzer {$/;"	c
+NameSorter	grabber/table/sort.js	/^export class NameSorter {$/;"	c
+NameWordGroup	grabber/word/name-word-group.js	/^export class NameWordGroup extends WordGroup {$/;"	c
+New Features	grabber/grabber-offline.md	/^# New Features$/;"	c
+Orientable	consys/orientable.js	/^export class Orientable extends TreeNode {$/;"	c
+Orientation	consys/orientation.js	/^export class Orientation {$/;"	c
+QUERY_ENTER_ENTRY_DIRECTION	grabber/default-config.js	/^  QUERY_ENTER_ENTRY_DIRECTION: 'row',$/;"	p	class:defaultConfig
+QUERY_ENTER_TEXT	grabber/default-config.js	/^  QUERY_ENTER_TEXT: 'Enter Search Term',$/;"	p	class:defaultConfig
+QUERY_FAIL_ALERT_TEXT	grabber/default-config.js	/^  QUERY_FAIL_ALERT_TEXT: 'Please enter a Search Term',$/;"	p	class:defaultConfig
+SEARCH_TEXT	grabber/default-config.js	/^  SEARCH_TEXT: 'Search for:',$/;"	p	class:defaultConfig
+SEARCH_WIDTH	grabber/default-config.js	/^  SEARCH_WIDTH: 120,$/;"	p	class:defaultConfig
+SORT_SELECT_BUTTON_CLASS	grabber/default-config.js	/^  SORT_SELECT_BUTTON_CLASS: 'lul-dark lul-norm-height',$/;"	p	class:defaultConfig
+SORT_SELECT_ENTRY_DIRECTION	grabber/default-config.js	/^  SORT_SELECT_ENTRY_DIRECTION: 'column',$/;"	p	class:defaultConfig
+SORT_SELECT_OPTION_TEXTS	grabber/default-config.js	/^  SORT_SELECT_OPTION_TEXTS: ['By frequency', 'By length', 'Alphabetically', 'By Appearance'],$/;"	p	class:defaultConfig
+SORT_SELECT_RADIO_TYPE	grabber/default-config.js	/^  SORT_SELECT_RADIO_TYPE: 'radio',$/;"	p	class:defaultConfig
+SORT_SELECT_TEXT	grabber/default-config.js	/^  SORT_SELECT_TEXT: 'Sort criterium',$/;"	p	class:defaultConfig
+STORED_ELEMENTS	base/get-store.js	/^var STORED_ELEMENTS = {};$/;"	v
+Sizeable	consys/sizeable.js	/^export class Sizeable extends Orientable {$/;"	c
+StatsTableHandler	grabber/table/table.js	/^export class StatsTableHandler extends NameAnalyzer {$/;"	c
+TABLE_CELL_CLASS	grabber/default-config.js	/^  TABLE_CELL_CLASS: ' lul-text lul-highlight-text-hover',$/;"	p	class:defaultConfig
+TABLE_CLASS	grabber/default-config.js	/^  TABLE_CLASS: 'lul-full-width',$/;"	p	class:defaultConfig
+TABLE_COLUMN_WIDTH	grabber/default-config.js	/^  TABLE_COLUMN_WIDTH: 120,$/;"	p	class:defaultConfig
+TABLE_ROW_CLASS	grabber/default-config.js	/^  TABLE_ROW_CLASS: 'lul-light lul-medium-hover',$/;"	p	class:defaultConfig
+TABLE_SCROLL_OFFSET	grabber/default-config.js	/^  TABLE_SCROLL_OFFSET: 50$/;"	p	class:defaultConfig
+TABLE_TEXT_CLASS	grabber/default-config.js	/^  TABLE_TEXT_CLASS: '',$/;"	p	class:defaultConfig
+TODO	grabber/grabber-offline.md	/^# TODO$/;"	c
+TRANSCRIPT_SCROLL_OFFSET	grabber/default-config.js	/^  TRANSCRIPT_SCROLL_OFFSET: 70,$/;"	p	class:defaultConfig
+TimeWordGroup	grabber/word/time-word-group.js	/^export class TimeWordGroup extends WordGroup {$/;"	c
+TranscriptAnalyzer	grabber/transcript/transcript-analyzer.js	/^export class TranscriptAnalyzer {$/;"	c
+TranscriptHandler	grabber/transcript/transcript.js	/^export class TranscriptHandler extends TranscriptScrollHandler {$/;"	c
+TranscriptScrollHandler	grabber/transcript/transcript-scroll.js	/^export class TranscriptScrollHandler extends TranscriptAnalyzer {$/;"	c
+TranscriptSpanHandler	grabber/transcript/transcript-span.js	/^export class TranscriptSpanHandler {$/;"	c
+TreeNode	consys/tree.js	/^export class TreeNode {$/;"	c
+VIDEOLANGUAGE	grabber/youtube/transcript.js	/^const VIDEOLANGUAGE = 'https:\/\/video.google.com\/timedtext?type=list&v=';$/;"	C
+VIDEOLINK	grabber/youtube/transcript.js	/^const VIDEOLINK = 'https:\/\/video.google.com\/timedtext?v=';$/;"	C
+With arguments	grabber/other.md	/^# With arguments$/;"	c
+Without arguments	grabber/other.md	/^# Without arguments$/;"	c
+WordAnalyzer	grabber/word/word-analyzer.js	/^export class WordAnalyzer {$/;"	c
+WordGroup	grabber/word/word-group.js	/^export class WordGroup {$/;"	c
+WordInstance	grabber/word/word-instance.js	/^export class WordInstance {$/;"	c
+YOUTUBE_API_LINK	grabber/youtube/youtube.js	/^const YOUTUBE_API_LINK = 'https:\/\/www.youtube.com\/iframe_api';$/;"	C
+Youtube Script Grabber	grabber/grabber-offline.md	/^# Youtube Script Grabber $/;"	c
+Youtube Script Grabber	grabber/grabber.md	/^# Youtube Script Grabber $/;"	c
+YoutubeHandler	grabber/youtube/youtube.js	/^export class YoutubeHandler extends YoutubeTranscriptHandler {$/;"	c
+YoutubeTranscriptHandler	grabber/youtube/transcript.js	/^export class YoutubeTranscriptHandler {$/;"	c
+[Symbol.iterator]	consys/tree.js	/^  *[Symbol.iterator]() {$/;"	g	class:TreeNode
+add	base/insert.js	/^export function add(parentKey, ...elementKeys) {$/;"	f
+addAfter	consys/tree.js	/^  addAfter(sibling) {$/;"	m	class:TreeNode
+addAsSiblingOf	consys/tree.js	/^  addAsSiblingOf(sibling, index) {$/;"	m	class:TreeNode
+addBefore	consys/tree.js	/^  addBefore(sibling) {$/;"	m	class:TreeNode
+addNextTo	consys/orientable.js	/^  addNextTo(orientationName, target) {$/;"	m	class:Orientable
+addSizes	consys/sizeable.js	/^function addSizes(direction, size1, size2) {$/;"	f
+adjustLayout	grabber/main.js	/^  static adjustLayout(availableWidth) {$/;"	m	class:Grabber
+all	consys/container.js	/^  static get all() {$/;"	G	class:Container
+allWordInstances	grabber/transcript/transcript-analyzer.js	/^  static *allWordInstances() {$/;"	g	class:TranscriptAnalyzer
+alphabetically	grabber/table/sort.js	/^  alphabetically: function(nameWordGroupA, nameWordGroupB) {$/;"	m	class:COMPATATORS
+analyzeNameGroups	grabber/table/name-analyzer.js	/^  static analyzeNameGroups(wordInstances) {$/;"	m	class:NameAnalyzer
+analyzeTranscript	grabber/transcript/transcript-analyzer.js	/^  static analyzeTranscript(transcript, minTime, maxTime) {$/;"	m	class:TranscriptAnalyzer
+ancestorGenerator	consys/tree.js	/^  *ancestorGenerator() {$/;"	g	class:TreeNode
+ancestors	consys/tree.js	/^  get ancestors() {return [...this.ancestorGenerator()];}$/;"	G	class:TreeNode
+apply	lul/embed.js	/^  apply() {$/;"	m	class:LulConfig
+arrangeContainers	grabber/container/layout.js	/^  static arrangeContainers(availableWidth) {$/;"	m	class:ContainerLayoutHandler
+arrayToListingString	base/css-control.js	/^export function arrayToListingString(array) {$/;"	f
+byFrequency	grabber/table/sort.js	/^  byFrequency: function(nameWordGroupA, nameWordGroupB) {$/;"	m	class:COMPATATORS
+byLength	grabber/table/sort.js	/^  byLength: function(nameWordGroupA, nameWordGroupB) {$/;"	m	class:COMPATATORS
+byOccurrence	grabber/table/sort.js	/^  byOccurrence: function(nameWordGroupA, nameWordGroupB) {$/;"	m	class:COMPATATORS
+calculateElementPosition	lul/overflow.js	/^function calculateElementPosition(element) {$/;"	f
+calculateElementSize	lul/overflow.js	/^function calculateElementSize (element) {$/;"	f
+castToId	grabber/youtube/youtube.js	/^  static castToId(enteredString, defaultId) {$/;"	m	class:YoutubeHandler
+check	lul/embed.js	/^      check: {$/;"	c	class:LulConfig.constructor.INPUT_ELEMENTS
+chrome	consys/.babelrc.json	/^          "chrome": "67",$/;"	s	object:presets.0.1.targets
+className	lul/embed.js	/^        className: 'lia-checkbox',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.check
+className	lul/embed.js	/^        className: 'lia-input',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.enter
+className	lul/embed.js	/^        className: 'lia-radio',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.radio
+className	lul/embed.js	/^        className: 'lia-range',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.range
+clear	base/get-store.js	/^export function clear(...keys) {$/;"	f
+collapseElement	lul/collapsible.js	/^function collapseElement(collapsible, delay) {$/;"	f
+column	lul/collapsible.js	/^  column: 'height'$/;"	p	class:directionSizeAttributeMap
+commonAncestor	consys/tree.js	/^  static commonAncestor(...treeNodes) {$/;"	m	class:TreeNode
+constrainDummy	grabber/container/dummy.js	/^export function constrainDummy(dummy, containerName) {$/;"	f
+constructor	consys/container.js	/^  constructor(id, size, allowLengthChange) {$/;"	m	class:Container
+constructor	consys/orientable.js	/^  constructor(name, direction) {$/;"	m	class:Orientable
+constructor	consys/orientation.js	/^  constructor(direction, factor) {$/;"	m	class:Orientation
+constructor	consys/sizeable.js	/^  constructor(name, minSize, allowLengthChange) {$/;"	m	class:Sizeable
+constructor	consys/tree.js	/^  constructor(name) {$/;"	m	class:TreeNode
+constructor	grabber/word/name-word-group.js	/^  constructor(name) {$/;"	m	class:NameWordGroup
+constructor	grabber/word/time-word-group.js	/^  constructor() {$/;"	m	class:TimeWordGroup
+constructor	grabber/word/word-group.js	/^  constructor() {$/;"	m	class:WordGroup
+constructor	grabber/word/word-instance.js	/^  constructor(text) {$/;"	m	class:WordInstance
+constructor	lul/embed.js	/^  constructor() {$/;"	m	class:LulConfig
+createSpan	grabber/transcript/transcript-span.js	/^  static createSpan(wordInstance) {$/;"	m	class:TranscriptSpanHandler
+createTranscript	grabber/transcript/transcript.js	/^  static createTranscript(transcript, minTime, maxTime) {$/;"	m	class:TranscriptHandler
+defaultConfig	grabber/default-config.js	/^export const defaultConfig = {$/;"	c
+difference	grabber/transcript/highlight.js	/^function difference(setA, setB) {$/;"	f
+directionSizeAttributeMap	lul/collapsible.js	/^var directionSizeAttributeMap = {$/;"	c
+edge	consys/.babelrc.json	/^          "edge": "17",$/;"	s	object:presets.0.1.targets
+element	consys/container.js	/^  get element() {$/;"	G	class:Container
+enter	lul/embed.js	/^      enter: {$/;"	c	class:LulConfig.constructor.INPUT_ELEMENTS
+excludeSmallWords	grabber/table/sort.js	/^  static excludeSmallWords(wordGroups) {$/;"	m	class:NameSorter
+expandElement	lul/collapsible.js	/^function expandElement(collapsible) {$/;"	f
+firefox	consys/.babelrc.json	/^          "firefox": "60",$/;"	s	object:presets.0.1.targets
+functions	lul/collapsible.js	/^    arg.functions['toggleFunction'] = function () {$/;"	f	function:arg
+gen	base/misc.js	/^export function gen(name, className) {$/;"	f
+genBox	lul/box.js	/^export function genBox(arg) {$/;"	f
+genButton	lul/input.js	/^export function genButton(arg) {$/;"	f
+genButtonRadioArray	lul/selection.js	/^export function genButtonRadioArray(arg) {$/;"	f
+genCheck	lul/input.js	/^export function genCheck(arg) {$/;"	f
+genCollapsible	lul/collapsible.js	/^export function genCollapsible(arg) {$/;"	f
+genDummy	grabber/container/dummy.js	/^export function genDummy(dummyName, className) {$/;"	f
+genEnter	lul/input.js	/^export function genEnter(arg) {$/;"	f
+genEnterEntry	grabber/interface.js	/^  static genEnterEntry({text, direction, onConfirm, name}) {$/;"	m	class:InterfaceHandler
+genEntry	lul/entry.js	/^export function genEntry(arg) {$/;"	f
+genExclude	grabber/interface.js	/^  static genExclude({text, boxClass, onConfirm}) {$/;"	m	class:InterfaceHandler
+genHtml	base/misc.js	/^export function genHtml(html) {$/;"	f
+genInput	lul/input.js	/^export function genInput(arg, inputName) {$/;"	f
+genLanguageSelection	grabber/interface.js	/^  static genLanguageSelection({text, direction, onConfirm, languageList, radioType}) {$/;"	m	class:InterfaceHandler
+genOptionArray	lul/selection.js	/^function genOptionArray(options)$/;"	f
+genOverflow	lul/overflow.js	/^export function genOverflow(arg) {$/;"	f
+genRadioArray	lul/selection.js	/^export function genRadioArray(arg) {$/;"	f
+genRange	lul/input.js	/^export function genRange(arg) {$/;"	f
+genSearch	grabber/interface.js	/^  static genSearch({width, text, onConfirm}) {$/;"	m	class:InterfaceHandler
+genSelection	lul/selection.js	/^export function genSelection(arg) {$/;"	f
+genSortSelection	grabber/interface.js	/^  static genSortSelection({text, direction, onConfirm, options, buttonClass, radioType}) {$/;"	m	class:InterfaceHandler
+genStatsTable	grabber/table/table.js	/^  static genStatsTable({$/;"	m	class:StatsTableHandler
+genText	base/misc.js	/^export function genText(content, className) {$/;"	f
+getCssProperty	base/css-control.js	/^export function getCssProperty(propertyName) {$/;"	f
+getCurrentTime	grabber/youtube/youtube.js	/^  static getCurrentTime() {$/;"	m	class:YoutubeHandler
+getCurrentTimeWordGroup	grabber/transcript/transcript.js	/^  static getCurrentTimeWordGroup(currentTime) {$/;"	m	class:TranscriptHandler
+getLanguageList	grabber/youtube/transcript.js	/^  static async getLanguageList(videoId) {$/;"	m	class:YoutubeTranscriptHandler
+getMinSize	consys/sizeable.js	/^  getMinSize() {$/;"	m	class:Sizeable
+getThicknessAndLengthIndex	consys/sizeable.js	/^function getThicknessAndLengthIndex(direction) {$/;"	f
+getTranscript	grabber/youtube/transcript.js	/^  static async getTranscript(videoId, languageCode) {$/;"	m	class:YoutubeTranscriptHandler
+getTreeLines	consys/container.js	/^  getTreeLines() {$/;"	m	class:Container
+getWordGroups	grabber/table/table.js	/^  static getWordGroups() {$/;"	m	class:StatsTableHandler
+getXMLDocFromLink	grabber/youtube/transcript.js	/^async function getXMLDocFromLink(link) {$/;"	f
+height	lul/collapsible.js	/^  height: 'scrollHeight'$/;"	p	class:scrollSizeAttributeMap
+height	lul/embed.js	/^      height: 'lul-collapsible-height'$/;"	p	class:LulConfig.constructor.COLLAPSIBLE_CLASS_MAP
+highlightGenericSet	grabber/transcript/highlight.js	/^  static highlightGenericSet({newSet, oldSet, persistingSet}) {$/;"	m	class:HighlightHandler
+highlightNameWordGroup	grabber/transcript/highlight.js	/^  static highlightNameWordGroup(nameWordGroup) {$/;"	m	class:HighlightHandler
+highlightSpan	grabber/transcript/transcript-span.js	/^  static highlightSpan(wordInstance) {$/;"	m	class:TranscriptSpanHandler
+highlightTimeWordGroup	grabber/transcript/highlight.js	/^  static highlightTimeWordGroup(timeWordGroup) {$/;"	m	class:HighlightHandler
+idCount	base/misc.js	/^var idCount = 0;$/;"	v
+initializeContainers	grabber/container/container.js	/^  static initializeContainers (divId) {$/;"	m	class:ContainerHandler
+inputType	lul/embed.js	/^        inputType: 'checkbox',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.check
+inputType	lul/embed.js	/^        inputType: 'radio',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.radio
+inputType	lul/embed.js	/^        inputType: 'range',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.range
+inputType	lul/embed.js	/^        inputType: 'text',$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.enter
+insert	base/insert.js	/^export function insert(mode, parentKey, ...elementKeys) {$/;"	f
+jumpInVideo	grabber/youtube/youtube.js	/^  static async jumpInVideo(position) {$/;"	m	class:YoutubeHandler
+listingStringToArray	base/css-control.js	/^export function listingStringToArray(listingString) {$/;"	f
+loadYTAPI	grabber/youtube/youtube.js	/^  static async loadYTAPI() {$/;"	m	class:YoutubeHandler
+make	base/insert.js	/^export function make(parentKey, ...elementKeys) {$/;"	f
+moveTo	consys/container.js	/^  moveTo(orientationName, ...targetKeys) {$/;"	m	class:Container
+name	consys/orientation.js	/^  get name() {$/;"	G	class:Orientation
+nameSet	grabber/transcript/highlight.js	/^HighlightHandler.nameSet = new Set();$/;"	v	class:HighlightHandler
+ofName	consys/orientation.js	/^  static ofName(name) {$/;"	m	class:Orientation
+onload	grabber/youtube/transcript.js	/^    request.onload = function () {$/;"	f	function:request
+overlapTest	lul/overflow.js	/^function overlapTest (overflow1, overflow2) {$/;"	f
+position	grabber/transcript/transcript-scroll.js	/^    function position(indexNumber) {$/;"	f	function:TranscriptScrollHandler.scrollToGroup
+presets	consys/.babelrc.json	/^  "presets": [$/;"	a
+prettify	grabber/word/word-analyzer.js	/^  static prettify(word) {$/;"	m	class:WordAnalyzer
+printTree	consys/container.js	/^  static printTree() {$/;"	m	class:Container
+radio	lul/embed.js	/^      radio: {$/;"	c	class:LulConfig.constructor.INPUT_ELEMENTS
+range	lul/embed.js	/^      range: {$/;"	c	class:LulConfig.constructor.INPUT_ELEMENTS
+recalculateIndices	consys/tree.js	/^  recalculateIndices() {$/;"	m	class:TreeNode
+recalculateOverflowIndices	lul/overflow.js	/^export function recalculateOverflowIndices () {$/;"	f
+removeHtmlShit	grabber/word/word-analyzer.js	/^  static removeHtmlShit(text) {$/;"	m	class:WordAnalyzer
+removeIfChildless	consys/orientable.js	/^  removeIfChildless() {$/;"	m	class:Orientable
+render	consys/container.js	/^  render() {$/;"	m	class:Container
+result	base/get-store.js	/^  let result =  document.getElementById(key);$/;"	v
+root	base/css-control.js	/^var root = document.querySelector(':root');$/;"	v
+row	lul/collapsible.js	/^  row: 'width',$/;"	p	class:directionSizeAttributeMap
+safari	consys/.babelrc.json	/^          "safari": "11.1"$/;"	s	object:presets.0.1.targets
+scrollSizeAttributeMap	lul/collapsible.js	/^var scrollSizeAttributeMap = {$/;"	c
+scrollToGroup	grabber/transcript/transcript-scroll.js	/^  static scrollToGroup(wordGroup, scrollOffset) {$/;"	m	class:TranscriptScrollHandler
+scrollToInstance	grabber/transcript/transcript-scroll.js	/^  static scrollToInstance(wordInstance, scrollOffset) {$/;"	m	class:TranscriptScrollHandler
+searchForTerm	grabber/table/sort.js	/^  static searchForTerm(wordGroups, searchTerm) {$/;"	m	class:NameSorter
+setClass	consys/container.js	/^  setClass(newClass) {$/;"	m	class:Container
+setConfig	grabber/transcript/transcript.js	/^  static setConfig(config) {$/;"	m	class:TranscriptHandler
+setCssProperty	base/css-control.js	/^export function setCssProperty(propertyName, propertyValue) {$/;"	f
+setExclude	grabber/main.js	/^  static async setExclude() {$/;"	m	class:Grabber
+setFilter	grabber/main.js	/^  static async setFilter() {$/;"	m	class:Grabber
+setLanguage	grabber/main.js	/^  static async setLanguage(videoId, languageCode) {$/;"	m	class:Grabber
+setLanguageSelection	grabber/main.js	/^  static async setLanguageSelection(videoId) {$/;"	m	class:Grabber
+setParent	consys/container.js	/^  setParent(parent, index) {$/;"	m	class:Container
+setParent	consys/tree.js	/^  setParent(parent, index) {$/;"	m	class:TreeNode
+setPlayerVideo	grabber/youtube/youtube.js	/^  static async setPlayerVideo(playerDummyID, videoId, width, height) {$/;"	m	class:YoutubeHandler
+setRoot	consys/container.js	/^  setRoot(key) {$/;"	m	class:Container
+setSearch	grabber/main.js	/^  static async setSearch() {$/;"	m	class:Grabber
+setSize	consys/container.js	/^  setSize(size) {$/;"	m	class:Container
+setSize	consys/sizeable.js	/^  setSize(size) {$/;"	m	class:Sizeable
+setSortSelection	grabber/main.js	/^  static setSortSelection() {$/;"	m	class:Grabber
+setStatsTable	grabber/main.js	/^  static setStatsTable() {$/;"	m	class:Grabber
+setTranscript	grabber/main.js	/^  static setTranscript(transcript) {$/;"	m	class:Grabber
+setVideo	grabber/main.js	/^  static async setVideo(videoLink) {$/;"	m	class:Grabber
+setVideoSelection	grabber/main.js	/^  static setVideoSelection() {$/;"	m	class:Grabber
+smallWordLength	grabber/table/sort.js	/^const smallWordLength = 3;$/;"	C
+sortNamedWordGroups	grabber/table/sort.js	/^  static sortNamedWordGroups(wordGroups, comparator) {$/;"	m	class:NameSorter
+split	consys/container.js	/^  split(direction) {$/;"	m	class:Container
+split	consys/orientable.js	/^  split(direction, splitParent) {$/;"	m	class:Orientable
+splitIntoRawWords	grabber/word/word-analyzer.js	/^  static splitIntoRawWords(text) {$/;"	m	class:WordAnalyzer
+start	grabber/main.js	/^  static async start(arg, uid) {$/;"	m	class:Grabber
+store	base/get-store.js	/^export function store(element, key) {$/;"	f
+targets	consys/.babelrc.json	/^        "targets": {$/;"	o	object:presets.0.1
+timeSet	grabber/transcript/highlight.js	/^HighlightHandler.timeSet = new Set();$/;"	v	class:HighlightHandler
+toggleElement	lul/collapsible.js	/^function toggleElement(collapsible) {$/;"	f
+trueType	base/get-store.js	/^  let trueType = truetypeof(key);$/;"	v
+truetypeof	base/misc.js	/^export function truetypeof(value) {$/;"	f
+uid	base/misc.js	/^export function uid() {$/;"	f
+unHighlightSpan	grabber/transcript/transcript-span.js	/^  static unHighlightSpan(wordInstance) {$/;"	m	class:TranscriptSpanHandler
+union	grabber/transcript/highlight.js	/^function union(setA, setB) {$/;"	f
+updateSizes	consys/container.js	/^  static updateSizes() {$/;"	m	class:Container
+watch	base/watch.js	/^export function watch(watcher) {$/;"	f
+width	lul/collapsible.js	/^  width: 'scrollWidth',$/;"	p	class:scrollSizeAttributeMap
+width	lul/embed.js	/^        width: 0,$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.check
+width	lul/embed.js	/^        width: 0,$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.radio
+width	lul/embed.js	/^        width: 225,$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.enter
+width	lul/embed.js	/^        width: 225,$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.range
+width	lul/embed.js	/^      width: 'lul-collapsible-width',$/;"	p	class:LulConfig.constructor.COLLAPSIBLE_CLASS_MAP
+widthProperty	lul/embed.js	/^        widthProperty: 'minWidth'$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.check
+widthProperty	lul/embed.js	/^        widthProperty: 'minWidth'$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.radio
+widthProperty	lul/embed.js	/^        widthProperty: 'width'$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.enter
+widthProperty	lul/embed.js	/^        widthProperty: 'width'$/;"	p	class:LulConfig.constructor.INPUT_ELEMENTS.range
+youngestPredecessorGenerator	consys/tree.js	/^  *youngestPredecessorGenerator() {$/;"	g	class:TreeNode

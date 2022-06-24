@@ -1,0 +1,123 @@
+:root {
+  --text-color: 75, 75, 75;
+  --default-font-size: 1.5rem;
+  --increased-font-size: 1.75rem;
+  --decreased-font-size: 1rem;
+  --title-font-size: 2em;
+  --mega-title-font-size: 2.5em;
+
+  --color-dark: 0, 0, 0;
+  --color-medium: 128, 128, 128;
+  --color-light: 255, 255, 255;
+
+  --font-weight-dark: bold;
+  --font-weight-medium: bold;
+  --font-weight-light: normal;
+
+  --norm-height: 60px;
+  --default-padding: 10px;
+  --default-margin: 10px;
+}
+
+.lia-radio {
+  margin: 7px 4px 7px 8px;
+}
+.lia-checkbox {
+  margin: 7px 4px 7px 4px;
+}
+.lia-input {
+  margin: 0px 4px 0px 4px;
+}
+
+.lul-padding {
+  padding: var(--default-padding);
+}
+
+.lul-margin {
+  margin: var(--default-margin);
+}
+.lul-norm-height {
+  height: var(--norm-height);
+}
+.lul-full-width {
+  width: 100%;
+}
+
+.lul-text,
+.lul-highlight-text, .lul-highlight-text-hover:hover,
+.lul-background-text, .lul-background-text-hover:hover,
+.lul-title-text,
+.lul-mega-title-text, .lul-mega-title-text-hover:hover {
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  transition-property: color, font-size;
+}
+
+.lul-text {
+  color: rgb(var(--text-color));
+  font-size: var(--default-font-size);
+}
+.lul-highlight-text, .lul-highlight-text-hover:hover {
+  color: rgb(var(--color-dark));
+  font-size: var(--increased-font-size);
+}
+.lul-background-text, .lul-background-text-hover:hover {
+  color: rgb(var(--text-color));
+  font-size: var(--decreased-font-size);
+}
+.lul-title-text,
+.lul-mega-title-text, .lul-mega-title-text-hover:hover {
+  font-family: "LiaSourceSerifPro";
+}
+.lul-title-text {
+  color: rgb(var(--text-color));
+  font-size: var(--title-font-size);
+}
+.lul-mega-title-text, .lul-mega-title-text-hover:hover {
+  color: rgb(var(--color-dark));
+  font-size: var(--mega-title-font-size);
+}
+
+
+
+
+.lul-dark, .lul-medium, .lul-light {
+  border: 1px solid rgb(var(--color-dark));
+  border-radius: 0px;
+  transition: color .3s ease;
+  transition: background-color .3s ease;
+  font-size: var(--default-font-size);
+}
+
+
+.lul-dark, .lul-dark-hover:hover {
+  background-color: rgb(var(--color-dark));
+  color: rgb(var(--color-light));
+}
+.lul-dark{
+  font-weight: var(--font-weight-dark);
+}
+
+
+.lul-medium, .lul-medium-hover:hover {
+  background-color: rgb(var(--color-medium));
+  color: rgb(var(--color-dark));
+}
+.lul-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.lul-light, .lul-light-hover:hover {
+  background-color: rgb(var(--color-light));
+  color: rgb(var(--text-color));
+}
+.lul-light {
+  font-weight: var(--font-weight-light);
+}
+
+.lul-y-scroll {
+  display: block;
+  white-space: normal;
+  overflow-y: auto
+}
+

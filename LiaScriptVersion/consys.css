@@ -1,0 +1,19 @@
+td.consys-container {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+.consys-container {
+  box-sizing: border-box;
+  border-collapse: separate;
+  padding: 0px;
+  margin: 0px;
+}
+ .consys-frame  { 
+   width: 100%; 
+   height: 500px; 
+ } 
+table.consys-container {
+  height: 100%;
+  width: 100%;
+}
