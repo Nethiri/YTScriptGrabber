@@ -1,5 +1,5 @@
 <!--
-author:   Daniel Hoffmann
+author:   Marco Naumann
 version:  0.2.0
 language: en
 narrator: US English Female

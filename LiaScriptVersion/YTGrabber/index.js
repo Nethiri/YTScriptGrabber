@@ -39,7 +39,8 @@ const HIGHT = 600;
 //const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
 //const LANGUAGEADD = "&lang="
 
-const REQUESTSERVER = "http://vfjaarqeja57cofx.myfritz.net:9988/?"
+//const REQUESTSERVER = "http://vfjaarqeja57cofx.myfritz.net:9988/?"
+const REQUESTSERVER = "https://ytscriptgrabberserver.herokuapp.com/?"
 const VIDEOID = "vidID="
 const VIDEOLANG ="vidLangCode="
 

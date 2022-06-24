@@ -1,11 +1,17 @@
-const VIDEOLINK = 'https://video.google.com/timedtext?v=';
-const VIDEOLANGUAGE = 'https://video.google.com/timedtext?type=list&v=';
-const LANGUAGEADD = '&lang=';
+//const VIDEOLINK = 'https://video.google.com/timedtext?v=';
+//const VIDEOLANGUAGE = 'https://video.google.com/timedtext?type=list&v=';
+//const LANGUAGEADD = '&lang=';
+
+const REQUESTSERVER = "https://ytscriptgrabberserver.herokuapp.com/?"
+const VIDEOID = "vidID="
+const VIDEOLANG ="vidLangCode="
 
 export class YoutubeTranscriptHandler {
 
   static async getLanguageList(videoId) {
-    let xmlDoc = await getXMLDocFromLink(VIDEOLANGUAGE + videoId);
+    //let xmlDoc = await getXMLDocFromLink(VIDEOLANGUAGE + videoId);
+    let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId)
+
     let rawLanguageList = xmlDoc.childNodes[0].childNodes;
 
     let languageList = [];
@@ -15,7 +21,9 @@ export class YoutubeTranscriptHandler {
   }
 
   static async getTranscript(videoId, languageCode) {
-    let xmlDoc = await getXMLDocFromLink(VIDEOLINK + videoId + LANGUAGEADD + languageCode);
+    //let xmlDoc = await getXMLDocFromLink(VIDEOLINK + videoId + LANGUAGEADD + languageCode);
+    let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId + VIDEOLANG + languageCode)
+
     let rawTranscript = xmlDoc.childNodes[0].childNodes;
 
     let transcript = [];
