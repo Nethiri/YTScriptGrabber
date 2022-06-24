@@ -4,14 +4,14 @@ version:  0.2.0
 language: en
 narrator: US English Female
 
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/base.js
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/consys.js
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/grabber.js
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/grabber-lia-bridge.js
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/lul-lia-bridge.js
-script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/lul.js
-link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/lul.css
-link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/consys.css
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/base.js
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/consys.js
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/grabber.js
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/grabber-lia-bridge.js
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/lul-lia-bridge.js
+script: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/lul.js
+link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/lul.css
+link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@latest/LiaScriptVersion/consys.css
 
 @gr: @grabber({})
 
