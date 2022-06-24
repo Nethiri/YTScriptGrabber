@@ -35,9 +35,15 @@ COMPARE_FUNKTIONS.alphabetZtoA = function(a,b) {
 }
 const WIDTH = 1000;
 const HIGHT = 600;
-const VIDEOLINK = "https://video.google.com/timedtext?v="
-const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
-const LANGUAGEADD = "&lang="
+//const VIDEOLINK = "https://video.google.com/timedtext?v="
+//const VIDEOLANGAUGE = "https://video.google.com/timedtext?type=list&v="
+//const LANGUAGEADD = "&lang="
+
+const REQUESTSERVER = "http://vfjaarqeja57cofx.myfritz.net:9988/?"
+const VIDEOID = "vidID="
+const VIDEOLANG ="vidLangCode="
+
+
 
 async function startProg() {
     await loadYTAPI();
@@ -93,18 +99,20 @@ async function setVideo(video) {
 }
 
 async function getLanguageList(videoID) {
-    var request = new XMLHttpRequest();
-    request.open("GET", VIDEOLANGAUGE + videoID, true);
-    request.responseType = 'document';
-    request.overrideMimeType('text/xml');
+    var request = new XMLHttpRequest(); 
+    //request.open("GET", VIDEOLANGAUGE + videoID, true);
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID);
+    //request.responseType = 'document';
+    request.responseType = "json";
+    //request.overrideMimeType('text/xml');
     return new Promise(function(resolve, reject) {
         request.onload = function () {
             if (request.readyState === request.DONE) {
               if (request.status === 200) {
-                resolve(parseLanguageList(request.responseXML));
+                resolve(request.response);
               }
               else{
-                  reject(request.status);
+                reject(request.status);
               }
             }
           };
@@ -125,15 +133,15 @@ return ret;
 
 async function loadTranscript(videoID, language){
     var request = new XMLHttpRequest();
-    console.log(VIDEOLINK + videoID + LANGUAGEADD + language);
-    request.open("GET", VIDEOLINK + videoID + LANGUAGEADD + language, true);
-    request.responseType = 'document';
-    request.overrideMimeType('text/xml');
+    //request.open("GET", VIDEOLINK + videoID + LANGUAGEADD + language, true);
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID + "&" + VIDEOLANG + language);
+    request.responseType = 'json';
+    //request.overrideMimeType('text/xml');
     return new Promise(function(resolve, reject) {
         request.onload = function () {
             if (request.readyState === request.DONE) {
               if (request.status === 200) {
-                resolve(request.responseXML);
+                resolve(request.response);
               }
               else{
                   reject(request.status);
@@ -144,14 +152,15 @@ async function loadTranscript(videoID, language){
     });
 }
 
-function getText(xmldoc) {
-    let textList = xmldoc.childNodes[0];
+function getText(jsonDoc) {
+    //no longer needed
+    let textList = jsonDoc.childNodes[0];
     let TimeStamps = textList.childNodes;
     let ret = [];
     for(let ts of TimeStamps){
         ret.push({start: ts.attributes.start.value * 1, duration: ts.attributes.dur.value * 1, textsnipit: ts.childNodes[0].data})
     }
-    return ret;
+    return ret;   
 }
 
 function renderText() {
