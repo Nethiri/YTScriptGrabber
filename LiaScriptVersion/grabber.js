@@ -396,6 +396,7 @@ const VIDEOLANG ="vidLangCode="
 
 class YoutubeTranscriptHandler {
 
+  /*
   static async getLanguageList(videoId) {
     //let xmlDoc = await getXMLDocFromLink(VIDEOLANGUAGE + videoId);
     let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId);
@@ -406,6 +407,32 @@ class YoutubeTranscriptHandler {
       languageList.push({code: rawLanguage.attributes.lang_code.value, name: rawLanguage.attributes.lang_translated.value});
     return languageList;
   }
+  */
+  static async getLanguageList(videoID) {
+    var request = new XMLHttpRequest(); 
+    //request.open("GET", VIDEOLANGAUGE + videoID, true);
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID);
+    //request.responseType = 'document';
+    request.responseType = "json";
+    //request.overrideMimeType('text/xml');
+    return new Promise(function(resolve, reject) {
+        request.onload = function () {
+            if (request.readyState === request.DONE) {
+              if (request.status === 200) {
+                resolve(request.response);
+              }
+              else{
+                reject(request.status);
+              }
+            }
+          };
+          request.send(null);
+    })
+  }
+
+
+
+
 
   static async getTranscript(videoId, languageCode) {
     //let xmlDoc = await getXMLDocFromLink(VIDEOLINK + videoId + LANGUAGEADD + languageCode);
