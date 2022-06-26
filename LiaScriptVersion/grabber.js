@@ -449,7 +449,7 @@ class YoutubeTranscriptHandler {
 */
   static async getTranscript(videoId, languageCode){
     var request = new XMLHttpRequest();
-    request.open("GET", REQUESTSERVER + VIDEOID + videoID + "&" + VIDEOLANG + language);
+    request.open("GET", REQUESTSERVER + VIDEOID + videoId + "&" + VIDEOLANG + languageCode);
     request.responseType = 'json';
 
     return new Promise(function(resolve,reject) {
