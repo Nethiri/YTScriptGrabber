@@ -430,6 +430,7 @@ class YoutubeTranscriptHandler {
     })
   }
 
+/*  
   static async getTranscript(videoId, languageCode) {
     //let xmlDoc = await getXMLDocFromLink(VIDEOLINK + videoId + LANGUAGEADD + languageCode);
     let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId + "&" + VIDEOLANG + languageCode);
@@ -444,6 +445,24 @@ class YoutubeTranscriptHandler {
         text: rawTranscriptEntry.childNodes[0].data
       });
     return transcript;
+  }
+*/
+  static async getTranscript(videoId, languageCode){
+    var request = new XMLHttpRequest();
+    request.open("GET", REQUESTSERVER + VIDEOID + videoID + "&" + VIDEOLANG + language);
+    request.responseType = 'json';
+
+    return new Promise(function(resolve,reject) {
+      request.onload = function() {
+        if(request.readyState===request.DONE) {
+          resolve(request.response);
+        }
+        else{
+          reject(request.status);
+        }
+      }
+    request.send(null);
+    });
   }
 
 }
