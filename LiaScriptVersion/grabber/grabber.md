@@ -10,8 +10,8 @@ script: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/grabber.js
 script: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/grabber-lia-bridge.js
 script: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/lul-lia-bridge.js
 script: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/lul.js
-link: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/lul.css
-link: https://nethiri.github.io/YTScriptGrabber/LiaScriptVersion/consys.css
+link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@main/LiaScriptVersion/lul.css
+link: https://cdn.jsdelivr.net/gh/nethiri/YTScriptGrabber@main/LiaScriptVersion/consys.css
 
 @gr: @grabber({})
 
