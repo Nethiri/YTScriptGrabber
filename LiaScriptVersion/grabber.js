@@ -432,7 +432,7 @@ class YoutubeTranscriptHandler {
 
   static async getTranscript(videoId, languageCode) {
     //let xmlDoc = await getXMLDocFromLink(VIDEOLINK + videoId + LANGUAGEADD + languageCode);
-    let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId + VIDEOLANG + languageCode);
+    let xmlDoc = await getXMLDocFromLink(REQUESTSERVER + VIDEOID + videoId + "&" + VIDEOLANG + languageCode);
 
     let rawTranscript = xmlDoc.childNodes[0].childNodes;
 
