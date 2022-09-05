@@ -134,7 +134,8 @@ class DefinitionHandler {
   static async getDefinitionArray(word) {
     let definitionDocument;
     try {
-     definitionDocument = await getXMLDocFromLink(DEFINITION_LINK + word, 'text/html');
+      //definitionDocument = await getXMLDocFromLink(DEFINITION_LINK + word, 'text/html');
+      definitionDocument = await this.getDefinitionArrayPromise(word)
     }
     catch {
       return [];
@@ -150,7 +151,29 @@ class DefinitionHandler {
     return definitionTextArray;
   }
 
+  static async getDefinitionArrayPromise(word) {
+    var defrequest = new XMLHttpRequest();
+    defrequest.open("GET", DEFINITION_LINK + word);
+    defrequest.responseType = "text";
+
+    return new Promise(function(resolve,reject) {
+      defrequest.onload() = function() {
+        if(defrequest.readyState===defrequest.DONE) {
+          resolve(defrequest.response);
+        }
+        else{
+          reject(defrequest.status);
+        }
+      }
+    defrequest.send(NULL);
+    });
+  }
+
 }
+
+
+
+
 
 class InspectorInterfaceHandler {
   static genTitle({titleClass, titleText}) {
@@ -1258,8 +1281,8 @@ class Grabber {
   
   static async setLanguageSelection(videoId) {
     let languageList = await YoutubeHandler.getLanguageList(videoId);
-    console.log("DEBUG: Function - setLanguageSelection - grabber.js");
-    console.log(languageList);
+    //console.log("DEBUG: Function - setLanguageSelection - grabber.js");
+    //console.log(languageList);
 
     set('languageSelectDummy', InterfaceHandler.genLanguageSelection({
       text: Grabber.config.LANGUAGE_SELECT_TEXT,
