@@ -1285,7 +1285,7 @@ class Grabber {
       radioType: Grabber.config.LANGUAGE_SELECT_RADIO_TYPE,
       direction: Grabber.config.LANGUAGE_SELECT_ENTRY_DIRECTION,
       languageList: languageList, 
-      onConfirm: function(languageCode) {Grabber.setLanguage(videoId, languageCode);}
+      onConfirm: function(languageCode) {Grabber.setLanguage(videoId, languageCode); console.log(languageCode);}
     }));
   }
   
