@@ -130,8 +130,8 @@ class DefinitionHandler {
   static async getDefinitionArray(word) {
     let definitionDocument;
     try {
-      //definitionDocument = await getXMLDocFromLink(DEFINITION_LINK + word, 'text/html');
-      definitionDocument = await getDefinitionArrayPromise(word)
+      definitionDocument = await getXMLDocFromLink(DEFINITION_LINK + word, 'text/html');
+      //definitionDocument = await getDefinitionArrayPromise(word)
     }
     catch {
       return [];
@@ -147,7 +147,7 @@ class DefinitionHandler {
     return definitionTextArray;
   }
 
-  static async getDefinitionArrayPromise(word) {
+  /*static async getDefinitionArrayPromise(word) {
     var defrequest = new XMLHttpRequest();
     defrequest.open("GET", DEFINITION_LINK + word);
     defrequest.responseType = "text";
@@ -163,7 +163,7 @@ class DefinitionHandler {
       }
     defrequest.send(NULL);
     });
-  }
+  }*/
 
 }
 
