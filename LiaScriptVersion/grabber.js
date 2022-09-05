@@ -428,7 +428,7 @@ class YoutubeTranscriptHandler {
           };
           request.send(null);
     })
-  }
+  } 
 
 /*  
   static async getTranscript(videoId, languageCode) {
@@ -1258,6 +1258,9 @@ class Grabber {
   
   static async setLanguageSelection(videoId) {
     let languageList = await YoutubeHandler.getLanguageList(videoId);
+    console.log("DEBUG: Function - setLanguageSelection - grabber.js");
+    console.log(languageList);
+
     set('languageSelectDummy', InterfaceHandler.genLanguageSelection({
       text: Grabber.config.LANGUAGE_SELECT_TEXT,
       radioType: Grabber.config.LANGUAGE_SELECT_RADIO_TYPE,
