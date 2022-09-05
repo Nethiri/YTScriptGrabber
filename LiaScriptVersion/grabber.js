@@ -127,15 +127,11 @@ class DefinitionHandler {
   }
 
 
-
-
-
-
   static async getDefinitionArray(word) {
     let definitionDocument;
     try {
       //definitionDocument = await getXMLDocFromLink(DEFINITION_LINK + word, 'text/html');
-      definitionDocument = await this.getDefinitionArrayPromise(word)
+      definitionDocument = await getDefinitionArrayPromise(word)
     }
     catch {
       return [];
