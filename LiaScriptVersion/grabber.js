@@ -138,7 +138,6 @@ class DefinitionHandler {
     }
 
     let rawDefinitionSpans = definitionDocument.getElementsByClassName('dtText');
-
     let definitionTextArray = [];
     for(let rawDefinitionSpan of rawDefinitionSpans) {
       definitionTextArray.push(rawDefinitionSpan.innerText);
