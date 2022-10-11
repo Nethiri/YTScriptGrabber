@@ -166,10 +166,6 @@ class DefinitionHandler {
 
 }
 
-
-
-
-
 class InspectorInterfaceHandler {
   static genTitle({titleClass, titleText}) {
     return genText(titleText, titleClass);
@@ -263,6 +259,7 @@ class InspectorInterfaceHandler {
   }
 }
 
+/* Deactivated Feature
 class InspectorHandler {
   static setConfig(config) {
     this.config = config;
@@ -319,6 +316,7 @@ class InspectorHandler {
       }
     });
 
+    
     return InspectorInterfaceHandler.genInspector({
       title: title, 
       definition: definition, 
@@ -326,6 +324,7 @@ class InspectorHandler {
       showInTranscriptButton: showInTranscriptButton, 
       copyLinesButton: copyLinesButton,
     });
+    
   }
 
   static copyLines(nameWordGroup) {
@@ -345,7 +344,7 @@ class InspectorHandler {
   }
 
 }
-
+*/
 const defaultConfig = {
   QUERY_ENTER_TEXT: 'Enter Search Term',
   QUERY_FAIL_ALERT_TEXT: 'Please enter a Search Term',
@@ -575,8 +574,8 @@ class ContainerLayoutHandler {
     let transcriptContainer = get('transcript.container');
     let statsTableContainer = get('statsTable.container');
     let filterContainer = get('filter.container');
-    let pocketContainer = get('pocket.container');
-    let inspectorContainer = get('inspector.container');
+    //let pocketContainer = get('pocket.container');
+    //let inspectorContainer = get('inspector.container');
 
     playerContainer.moveTo('down', optionsContainer);
 
@@ -590,12 +589,12 @@ class ContainerLayoutHandler {
         //1080 - inf
         let coupleWidth = (availableWidth - 600) / 2;
 
-        inspectorContainer.minSize = [0, 230];
-        inspectorContainer.moveTo('down', playerContainer);
+        //inspectorContainer.minSize = [0, 230];
+        //inspectorContainer.moveTo('down', playerContainer);
 
         transcriptContainer.minSize = [coupleWidth, 437.5];
-        pocketContainer.minSize = [0, 230];
-        pocketContainer.moveTo('down', transcriptContainer);
+        //pocketContainer.minSize = [0, 230];
+        //pocketContainer.moveTo('down', transcriptContainer);
 
         statsTableContainer.moveTo('right', playerContainer, transcriptContainer);
         statsTableContainer.minSize = [coupleWidth, 417.5];
@@ -612,11 +611,11 @@ class ContainerLayoutHandler {
         statsTableContainer.minSize = [availableWidth - 240, 230];
         statsTableContainer.moveTo('right', filterContainer);
 
-        inspectorContainer.minSize = [availableWidth - 240, 230];
-        inspectorContainer.moveTo('down', statsTableContainer, pocketContainer);
+        //inspectorContainer.minSize = [availableWidth - 240, 230];
+        //inspectorContainer.moveTo('down', statsTableContainer, pocketContainer);
 
-        pocketContainer.minSize = [240, 230];
-        pocketContainer.moveTo('right', inspectorContainer);
+        //pocketContainer.minSize = [240, 230];
+        //pocketContainer.moveTo('right', inspectorContainer);
 
       }
     } else {
@@ -632,11 +631,11 @@ class ContainerLayoutHandler {
       statsTableContainer.minSize = [availableWidth - 240, 430];
       statsTableContainer.moveTo('right', filterContainer );
 
-      pocketContainer.minSize = [240, 230];
-      pocketContainer.moveTo('down', filterContainer);
+      //pocketContainer.minSize = [240, 230];
+      //pocketContainer.moveTo('down', filterContainer);
 
-      inspectorContainer.minSize = [0, 230];
-      inspectorContainer.moveTo('down', statsTableContainer, pocketContainer);
+      //inspectorContainer.minSize = [0, 230];
+      //inspectorContainer.moveTo('down', statsTableContainer, pocketContainer);
     }
 
     Container.updateSizes();
@@ -1298,7 +1297,8 @@ class Grabber {
     StatsTableHandler.excludeBool = false;
     StatsTableHandler.searchTerm = undefined;
     StatsTableHandler.comparator = 'byFrequency';
-    Grabber.setInspectorConfig();
+    //Grabber.setInspectorConfig();
+    //part of the deactivated inspector feature
     Grabber.setStatsTable();
     Grabber.setFilter();
   }
@@ -1360,7 +1360,12 @@ class Grabber {
       tableCellClass: Grabber.config.TABLE_CELL_CLASS,
       tableTextClass: Grabber.config.TABLE_TEXT_CLASS,
       clickFunction:  async function (nameWordGroup) {
-        set('inspector', await InspectorHandler.setWordGroup(nameWordGroup));
+        //Deactivated feature - old and no longer needed
+        //Was looking up the description of the selected word out of the filter
+        //set('inspector', await InspectorHandler.setWordGroup(nameWordGroup));
+
+
+        //dr Jacob wants "if word klicked, then highlight words corrosponding in the script"
       }
     }));
 
