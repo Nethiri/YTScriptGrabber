@@ -797,6 +797,20 @@ class TranscriptSpanHandler {
     let span = wordInstance.span;
     span.className = TranscriptSpanHandler.config.defaultSpanClass;
   }
+
+  static highlighSpanBackground(wordInstance) {
+    //todo - highlights the background of the span (yellowish)
+    let span = wordInstance.span;
+    span.className = TranscriptSpanHandler.config.highlightSpanClass;
+  }
+
+  static unhighlighSpanBackground(wordInstance) {
+    //todo - un-highlights the background of the span (yellowish)
+    let span = wordInstance.span;
+    span.className = TranscriptSpanHandler.config.defaultSpanClass;
+  }
+
+
 }
 
 class HighlightHandler {
@@ -1376,6 +1390,9 @@ class Grabber {
   static highlightClickedWords(spanList) {
     //console.log(spanList.wordInstances)
 
+    //HighlightHandler.highlightNameWordGroup(spanList)
+    
+    
     let allElementsAlreadyHighlited = document.querySelectorAll('[class$="lul-highlight-text-backgroundColor"]')
     if(allElementsAlreadyHighlited.length != 0) { 
       for(let index = 0; index<allElementsAlreadyHighlited.length;index++){
@@ -1398,7 +1415,7 @@ class Grabber {
       //console.log(myspan.className);
       myspan.className = myspan.className + " " + "lul-highlight-text-backgroundColor"
     }
-
+    
     return;
   }
   
