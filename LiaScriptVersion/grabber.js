@@ -790,26 +790,15 @@ class TranscriptSpanHandler {
 
   static highlightSpan(wordInstance) {
     let span = wordInstance.span;
-    span.className = TranscriptSpanHandler.config.highlightSpanClass;
+    span.classList.add(TranscriptSpanHandler.config.highlightSpanClass);
+    //span.className = TranscriptSpanHandler.config.highlightSpanClass;
   }
 
   static unHighlightSpan(wordInstance) {
     let span = wordInstance.span;
-    span.className = TranscriptSpanHandler.config.defaultSpanClass;
+    span.classList.remove(TranscriptSpanHandler.config.highlightSpanClass);
+    //pan.className = TranscriptSpanHandler.config.defaultSpanClass;
   }
-
-  static highlighSpanBackground(wordInstance) {
-    //todo - highlights the background of the span (yellowish)
-    let span = wordInstance.span;
-    span.className = TranscriptSpanHandler.config.highlightSpanClass;
-  }
-
-  static unhighlighSpanBackground(wordInstance) {
-    //todo - un-highlights the background of the span (yellowish)
-    let span = wordInstance.span;
-    span.className = TranscriptSpanHandler.config.defaultSpanClass;
-  }
-
 
 }
 
@@ -1393,19 +1382,11 @@ class Grabber {
     //HighlightHandler.highlightNameWordGroup(spanList)
     
     
-    let allElementsAlreadyHighlited = document.querySelectorAll('[class$="lul-highlight-text-backgroundColor"]')
-    if(allElementsAlreadyHighlited.length != 0) { 
-      for(let index = 0; index<allElementsAlreadyHighlited.length;index++){
-        let thisClassName = allElementsAlreadyHighlited[index].className;
-        if(thisClassName == "lul-text lul-highlight-text-backgroundColor") {
-          allElementsAlreadyHighlited[index].className = "lul-text";
-        } else if(thisClassName == "lul-highlight-text lul-highlight-text-backgroundColor") {
-          allElementsAlreadyHighlited[index].className = "lul-highlight-text";
-        } else {
-          console.log(thisClassName);
-        }
+    let allElementsAlreadyHighlited = document.querySelectorAll('[class$="lul-highlight-text-backgroundColor"]') 
+      for(let e of allElementsAlreadyHighlited) {
+        e.classList.remove("lul-highlight-text-backgroundColor")
       }
-    }
+    
 
 
 
@@ -1413,7 +1394,8 @@ class Grabber {
       let myspan = spanList.wordInstances[index].span
       //console.log(myspan)
       //console.log(myspan.className);
-      myspan.className = myspan.className + " " + "lul-highlight-text-backgroundColor"
+      myspan.classList.add("lul-highlight-text-backgroundColor");
+      //myspan.className = myspan.className + " " + "lul-highlight-text-backgroundColor"
     }
     
     return;
