@@ -1382,7 +1382,7 @@ class Grabber {
     //HighlightHandler.highlightNameWordGroup(spanList)
     
     
-    let allElementsAlreadyHighlited = document.querySelectorAll('[class*="lul-highlight-text-backgroundColor"]') 
+    let allElementsAlreadyHighlited = document.querySelectorAll('[class*="lul-highlight-text-backgroundColor"]')
       for(let e of allElementsAlreadyHighlited) {
         e.classList.remove("lul-highlight-text-backgroundColor")
       }
