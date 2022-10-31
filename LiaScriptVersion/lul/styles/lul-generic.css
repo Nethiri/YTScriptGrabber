@@ -121,3 +121,6 @@
   overflow-y: auto
 }
 
+.lul-highlight-text-backgroundColor {
+  background-color: hsla(60, 100%, 50%, 0.20)
+}

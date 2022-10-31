@@ -108,8 +108,6 @@ class PocketHandler {
 const DEFINITION_LINK = 'https://www.merriam-webster.com/dictionary/';
 class DefinitionHandler {
   
-
-
   static async getDefinitionSpans(word) {
     let definitionArray = await DefinitionHandler.getDefinitionArray(word);
     let definitionSpans = [];
@@ -1230,8 +1228,6 @@ class Grabber {
     else
       Grabber.setVideo(arg.videoId);
 
-    
-
   }
 
   static setVideoSelection() {
@@ -1352,6 +1348,8 @@ class Grabber {
     PocketHandler.initialize();
   }
 
+
+  
   static setStatsTable() {
     set('statsTableDummy', StatsTableHandler.genStatsTable({
       columnWidth: Grabber.config.TABLE_COLUMN_WIDTH,
@@ -1366,10 +1364,44 @@ class Grabber {
 
 
         //dr Jacob wants "if word klicked, then highlight words corrosponding in the script"
-      }
-    }));
 
+        
+        //console.log(nameWordGroup);
+        Grabber.highlightClickedWords(nameWordGroup)
+
+      }
+    }));   
   }
+
+  static highlightClickedWords(spanList) {
+    //console.log(spanList.wordInstances)
+
+    let allElementsAlreadyHighlited = document.querySelectorAll('[class$="lul-highlight-text-backgroundColor"]')
+    if(allElementsAlreadyHighlited.length != 0) { 
+      for(let index = 0; index<allElementsAlreadyHighlited.length;index++){
+        let thisClassName = allElementsAlreadyHighlited[index].className;
+        if(thisClassName == "lul-text lul-highlight-text-backgroundColor") {
+          allElementsAlreadyHighlited[index].className = "lul-text";
+        } else if(thisClassName == "lul-highlight-text lul-highlight-text-backgroundColor") {
+          allElementsAlreadyHighlited[index].className = "lul-highlight-text";
+        } else {
+          console.log(thisClassName);
+        }
+      }
+    }
+
+
+
+    for(let index = 0; index<spanList.wordInstances.length; index++) {
+      let myspan = spanList.wordInstances[index].span
+      //console.log(myspan)
+      //console.log(myspan.className);
+      myspan.className = myspan.className + " " + "lul-highlight-text-backgroundColor"
+    }
+
+    return;
+  }
+  
 
   static async setFilter() {
     Grabber.setSortSelection();
