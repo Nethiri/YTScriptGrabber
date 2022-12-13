@@ -78,7 +78,6 @@ async function setVideo(video) {
     let nextButton = document.createElement("INPUT");
     nextButton.type = "BUTTON";
     nextButton.value="OK";
-    nextButton.className = "btn";
     nextButton.onclick = async function() {
         curTranscript = await loadTranscript(video, select.value);
         texthaufen = transcripttotext();
@@ -204,7 +203,7 @@ function highlightText(currentpos) {
     for(let i = 0; i < curTranscript.length; i++) {
         let tsmp = curTranscript[i];
         if(tsmp.start < currentpos && tsmp.start + tsmp.duration > currentpos){
-            transcriptSpans[i].style = "background-color:#264F78";
+            transcriptSpans[i].style = "background-color:#CC9CDF";
         }
         else{
             transcriptSpans[i].style = "background-color:none";
@@ -286,9 +285,9 @@ for(let entry of array) { // eintraege in die Tab. generieren...
     block.style="width:100%";
     let blockItem = document.createElement("TR");
     let word = document.createElement("TD");
-    word.style="width:50%; color: #CCCCCC";
+    word.style="width:50%";
     let amount = document.createElement("TD");
-    amount.style="width:50%; color: #CCCCCC;"
+    amount.style="width:50%";
     word.appendChild(document.createTextNode(entry.word));
     amount.appendChild(document.createTextNode(entry.amount));
     blockItem.appendChild(word);
@@ -305,14 +304,13 @@ for(let entry of array) { // eintraege in die Tab. generieren...
 
 }
 //console.log(displayArray);
-
 let table = document.createElement("table");
-table.style="width:100%; border:2px #CCCCCC;"
+table.style="width:100%; border:2px solid black;"
 for(let zeile = 0; zeile < zeilen; zeile++) {
     let zeileItem = document.createElement("TR");
     for(let spalte = 0; spalte < spaltn; spalte++) {
         let spalteItem = document.createElement("TD");
-        spalteItem.style="border:2px #CCCCCC;"
+        spalteItem.style="border:2px solid black;"
         //console.log(spalte + zeile * spaltn);
         if(displayArray[spalte + zeile * spaltn] === undefined){
             break;

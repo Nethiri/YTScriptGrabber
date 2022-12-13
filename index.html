@@ -9,29 +9,59 @@
         <title>Youtube-Script-Grabber</title>
         <script src="index.js"></script> 
         <script src="YTAPIScript.js"></script> <!--script which handles the yt api-->
+        <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <table style="width:100%">
+        <div class="webhead">
+            <img class="logo" src="res\wbm_orig_rgb.png">
+            <span id="webtitle" onclick="">  
+                <div style="font-size: 3vw; background-image: linear-gradient(to right, #1E1E1E, #0064A9); border-top-right-radius: 35px; padding-right: 10px;">Foreign languages</div>
+                <div style="font-size: 1vw; float: right;">a door to many things</div>
+            </span>
+
+        </div>
+
+        <div id="SelectBox">                    
+            <input class="entry" type="text" id = "myTextfield">
+            <input class="btn" type="button" value="Click Me!" onclick=" setVideo(document.getElementById('myTextfield').value)">
+            <span id="platzfuerselect"></span>
+            <span id="placefuerselectzwo"></span> 
+        </div>
+
+        <table style="width:100%" id="MainContent">
+            <!--<tr>
+                <th id="" colspan="2">
+
+                </th>
+            </tr>-->
             <tr>
-                <!-- <th>Linker Teil</th>
-                <th>Reechter Teil</th> -->
-            </tr>
-            <tr>
-                <td><div id = "MyPlayer"></div></td>
+                <td><div id = "MyPlayer" class="playerSpace">
+                    <div style="font-size: 2vw">Hello and Welcome to the TU Freiberg Youtube Image grabber,</div>
+                    <div style="font-size: 1vw;">with the help of this tool you are able to read the script, subtitles or auto-generated subtitles from a selected video.</div>
+                    <br>
+                    <div style="font-size: 1vw;">In order to start, you have to first find a video you like.</div>
+                    <br>
+                    <div style="font-size: 1vw;">Once you have a video, you need the link of said video.<br>
+                    Lets take this one for example: <a href="https://www.youtube.com/watch?v=9P6rdqiybaw">Wormholes Explained - Breaking Spacetime</a> by Kurzgesagt - In a Nutshell  <br>
+                    with the youtube link: "https://www.youtube.com/watch?v=9P6rdqiybaw"
+                    </div>
+                    <br>
+                    <div style="font-size: 1vw;">Now that we have this link, please look at the end of the link, you can see the ID of your video.<br>
+                    This ID is needed to continue.<br>
+                    In this case: "9P6rdqiybaw"<br>
+                    The ID you now have, you can enter into the textbox seen on your screen. <br><br>
+                    Once you've entered the ID, you can click the button next to it to proceed to select a language you want to extract.<br>
+                    Confirm the language by pressing the OK button.<br>
+                    </div>
+                    
+                </div></td>
                 <td>
-                    <div style="height:600px; overflow:auto;">
+                    <div class="playerSpace">
                         <p id="PlatzhalterfuerTextBox"></p>
                     </div>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <input type="text" id = "myTextfield">
-                    <input type="button" value="Click Me!" onclick=" setVideo(document.getElementById('myTextfield').value)">
-                    <span id="platzfuerselect"></span>
-                    <span id="placefuerselectzwo"></span>
-                </td>
-            </tr>
+
             <tr>
                 <td colspan="2">
                     <div id="spacefuerStats"></div>
