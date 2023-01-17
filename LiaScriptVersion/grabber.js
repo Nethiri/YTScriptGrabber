@@ -403,7 +403,7 @@ const defaultConfig = {
 //const VIDEOLANGUAGE = 'https://video.google.com/timedtext?type=list&v=';
 //const LANGUAGEADD = '&lang=';
 
-const REQUESTSERVER = "https://ytscriptgrabberserver.herokuapp.com/?"
+const REQUESTSERVER = "https://ytscriptgrabber.herokuapp.com/?"
 const VIDEOID = "vidID="
 const VIDEOLANG ="vidLangCode="
 
